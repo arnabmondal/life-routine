@@ -1,0 +1,43 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: routine
+      POSTGRES_USER: routine
+      POSTGRES_PASSWORD: routine_local_password
+    ports:
+      - "127.0.0.1:5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./backend/sql/init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U routine -d routine"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DATABASE_URL: postgres://routine:routine_local_password@db:5432/routine
+      GRPC_PORT: 50051
+      TZ: America/Los_Angeles
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+  web:
+    build:
+      context: .
+      dockerfile: web/Dockerfile
+    ports:
+      - "127.0.0.1:3000:3000"
+    environment:
+      GRPC_ADDRESS: backend:50051
+      TZ: America/Los_Angeles
+    depends_on:
+      - backend
+    restart: unless-stopped
+volumes:
+  postgres_data:
