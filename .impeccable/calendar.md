@@ -17,3 +17,6 @@ The calendar now places cards on a 24-hour local time grid. Dragging changes chr
 
 ## Activity log extension
 Activity log adds a two-thirds completion-trend graph and one-third consistency leaderboard, stacked below 950px. The time scope is four/eight weeks ending with the selected week. Selecting a ranked activity filters the chart, while the weekly records stay below. Distinct completed days drive rank; repeated sessions do not inflate consistent-day counts. Query `?view=log` opens Activity log directly and preserves that view on refresh.
+
+## Planning-hours extension
+The original full-day grid is now configurable through Calendar settings beside New activity. Its default is 6:00 AM–10:00 PM. The native settings dialog groups Planning hours as its first extensible section. The preference is local to this browser, changes visible grid geometry only, and leaves stored activities and summaries intact. Boundary segments clip into the visible window; hidden records remain accessible through Activity log. Ordinary mutation scroll/focus continuity remains required.

@@ -48,3 +48,22 @@ test('local destination survives DST transition while elapsed duration stays fix
 test('snap rounds to quarter hours and clamps to the current day', () => {
  assert.equal(snapMinute(546),540);assert.equal(snapMinute(548),555);assert.equal(snapMinute(-300),0);assert.equal(snapMinute(1600),1425);
 });
+
+
+test('planning hours hide outside events and clip crossings before overlap layout', () => {
+ const rows=layoutDay([
+  activity('before',at(4),at(6)),activity('cross-start',at(5),at(7)),
+  activity('morning',at(6,30),at(8)),activity('cross-end',at(21,30),at(23)),
+  activity('after',at(22),at(23)),
+ ],day,360,1320);
+ assert.deepEqual(Array.from(rows,r=>r.activity.id),['cross-start','morning','cross-end']);
+ assert.equal(rows[0].start,360);assert.equal(rows[0].end,420);
+ assert.equal(rows[0].lanes,2);assert.equal(rows[1].lanes,2);
+ assert.equal(rows[2].end,1320);assert.equal(rows[2].visualEnd,1320);
+});
+test('quarter-hour windows and overnight continuations stay within visible boundaries', () => {
+ const rows=layoutDay([activity('overnight',at(23,0,-1),at(9)),activity('short',at(9,10),at(9,15))],day,495,555);
+ assert.equal(rows[0].start,495);assert.equal(rows[0].continuation,true);
+ assert.equal(rows[1].visualEnd,555);
+ assert.ok(rows.every(row=>row.start>=495&&row.visualEnd<=555));
+});

@@ -22,13 +22,16 @@ type Props = {
   days: Date[];
   items: CalendarActivity[];
   busy: boolean;
+  startMinute: number;
+  endMinute: number;
+  onViewLog: () => void;
   onEdit: (activity: CalendarActivity) => void;
   onNew: (day: Date) => void;
   onStatus: (activity: CalendarActivity, status: CalendarActivity['status']) => void;
   onMove: (activity: CalendarActivity, startAt: string) => Promise<void>;
 };
 
-export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatus, onMove }: Props) {
+export default function WeekCalendar({ days, items, busy, startMinute, endMinute, onViewLog, onEdit, onNew, onStatus, onMove }: Props) {
   const scrollRef = useRef<HTMLDivElement>(null);
   const pointer = useRef<PointerSession | null>(null);
   const point = useRef({ x: 0, y: 0 });
@@ -50,21 +53,22 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
   // Start near the earliest commitment, with 15 minutes of context, rather than at midnight.
   useEffect(() => {
     if (scrollRef.current) {
-      const earliest = items.length ? Math.min(...items.map(item => minuteOfDay(new Date(item.startAt)))) : 8 * 60;
-      scrollRef.current.scrollTop = Math.max(0, earliest - 15) * PIXELS_PER_MINUTE;
+      const visible = days.flatMap(day => layoutDay(items, day, startMinute, endMinute));
+      const earliest = visible.length ? Math.min(...visible.map(item => item.start)) : startMinute;
+      scrollRef.current.scrollTop = Math.max(0, earliest - startMinute - 15) * PIXELS_PER_MINUTE;
     }
     pointer.current = null;
     destinationRef.current = null;
     setDestination(null);
     // Activity edits must not reset the user's scroll position.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [weekKey]);
+  }, [weekKey, startMinute, endMinute]);
 
   function selectDay(day: Date) {
     if (destinationRef.current) return;
     setSelected(localDateKey(day));
-    const events = layoutDay(items, day);
-    if (scrollRef.current) scrollRef.current.scrollTop = Math.max(0, (events[0]?.start ?? 8 * 60) - 15) * PIXELS_PER_MINUTE;
+    const events = layoutDay(items, day, startMinute, endMinute);
+    if (scrollRef.current) scrollRef.current.scrollTop = Math.max(0, (events[0]?.start ?? startMinute) - startMinute - 15) * PIXELS_PER_MINUTE;
   }
 
   function pointDestination(x: number, y: number) {
@@ -77,7 +81,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
       const bounds = button.getBoundingClientRect();
       if (x >= bounds.left && x <= bounds.right && y >= bounds.top && y <= bounds.bottom) {
         const day = Number(button.dataset.dropDay);
-        preview({ activity: session.activity, day, minute: minuteOfDay(new Date(session.activity.startAt)), keyboard: false });
+        preview({ activity: session.activity, day, minute: Math.max(startMinute, Math.min(endMinute - SNAP_MINUTES, minuteOfDay(new Date(session.activity.startAt)))), keyboard: false });
         setSelected(localDateKey(days[day]));
         return;
       }
@@ -91,7 +95,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
     for (const track of tracks) {
       const rect = track.getBoundingClientRect();
       if (rect.width && x >= rect.left && x <= rect.right) {
-        const minute = snapMinute((y - rect.top) / PIXELS_PER_MINUTE - session.offset);
+        const minute = Math.max(startMinute, Math.min(endMinute - SNAP_MINUTES, snapMinute(startMinute + (y - rect.top) / PIXELS_PER_MINUTE - session.offset)));
         preview({ activity: session.activity, day: Number(track.dataset.day), minute, keyboard: false });
         return;
       }
@@ -150,7 +154,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
     const handle = target.closest('.drag-handle');
     if (target.closest('.calendar-outcomes') || (event.pointerType === 'touch' && !handle)) return;
     const rect = event.currentTarget.getBoundingClientRect();
-    pointer.current = { activity, pointerId: event.pointerId, x: event.clientX, y: event.clientY, offset: (event.clientY - rect.top) / PIXELS_PER_MINUTE, active: false };
+    pointer.current = { activity, pointerId: event.pointerId, x: event.clientX, y: event.clientY, offset: (event.clientY - rect.top) / PIXELS_PER_MINUTE + Math.max(0, startMinute - minuteOfDay(new Date(activity.startAt))), active: false };
     point.current = { x: event.clientX, y: event.clientY };
     suppressClick.current = false;
   }
@@ -193,7 +197,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
     if (!current) {
       if (event.key === ' ' || event.key === 'Enter') {
         event.preventDefault();
-        preview({ activity, day, minute: minuteOfDay(new Date(activity.startAt)), keyboard: true });
+        preview({ activity, day, minute: Math.max(startMinute, minuteOfDay(new Date(activity.startAt))), keyboard: true });
         setAnnouncement(`Moving ${activity.title}. Arrow keys change time and day. Enter saves. Escape cancels.`);
       }
       return;
@@ -206,7 +210,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
     event.preventDefault();
     const next = { ...current };
     if (event.key === 'ArrowUp' || event.key === 'ArrowDown') {
-      next.minute = Math.max(0, Math.min(1425, current.minute + (event.key === 'ArrowUp' ? -SNAP_MINUTES : SNAP_MINUTES)));
+      next.minute = Math.max(startMinute, Math.min(endMinute - SNAP_MINUTES, current.minute + (event.key === 'ArrowUp' ? -SNAP_MINUTES : SNAP_MINUTES)));
     } else {
       next.day = Math.max(0, Math.min(6, current.day + (event.key === 'ArrowLeft' ? -1 : 1)));
     }
@@ -216,7 +220,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
     // Keep the source handle visible/focused on phones; the destination is also stated above the grid.
     const scroll = scrollRef.current;
     if (scroll) {
-      const top = next.minute * PIXELS_PER_MINUTE;
+      const top = (next.minute - startMinute) * PIXELS_PER_MINUTE;
       if (top < scroll.scrollTop + 90) scroll.scrollTop = Math.max(0, top - 90);
       else if (top > scroll.scrollTop + scroll.clientHeight - 100) scroll.scrollTop = top - scroll.clientHeight + 120;
     }
@@ -227,7 +231,13 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
     ? `${destination.activity.title} → ${dayName(days[destination.day])}, ${time(movedPreview.startAt)} – ${time(movedPreview.endAt)}`
     : null;
 
+  const visibleIds = new Set(days.flatMap(day => layoutDay(items, day, startMinute, endMinute).map(row => row.activity.id)));
+  const hiddenCount = items.filter(item => !visibleIds.has(item.id)).length;
+  const ticks = [startMinute, ...Array.from({ length: 48 }, (_, i) => i * 30).filter(minute => minute > startMinute && minute < endMinute)];
+  const labels = [startMinute, ...Array.from({ length: 24 }, (_, hour) => hour * 60).filter(minute => minute > startMinute && minute < endMinute)];
+
   return <div className={'time-calendar' + (destination ? ' is-moving' : '')}>
+    {hiddenCount > 0 && <p className="calendar-window-note">{hiddenCount} {hiddenCount === 1 ? 'activity is' : 'activities are'} outside your planning hours. <button onClick={onViewLog}>View in activity log</button></p>}
     <div className="calendar-drag-help">
       <p id="calendar-move-help">Drag a card to change its time or day. Overlaps are welcome. <span>On touch screens, drag the grip; drop onto a date to change days. Times snap to 15 minutes.</span></p>
       <span className="local-time-label">Local time</span>
@@ -243,15 +253,15 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
           <button className="time-add" disabled={busy} onClick={() => onNew(day)} aria-label={`Add activity on ${dayName(day)}`} title="Add activity"><Plus size={14}/></button>
         </div>)}
       </div>
-      <div className="time-body" style={{ height: 1440 * PIXELS_PER_MINUTE }}>
-        <div className="time-ruler" aria-hidden="true">{Array.from({ length: 24 }, (_, hour) => <span key={hour} style={{ top: hour * 60 * PIXELS_PER_MINUTE }}>{hour === 0 ? '12 AM' : hour === 12 ? '12 PM' : `${hour % 12} ${hour < 12 ? 'AM' : 'PM'}`}</span>)}</div>
+      <div className="time-body" style={{ height: (endMinute - startMinute) * PIXELS_PER_MINUTE }}>
+        <div className="time-ruler" aria-hidden="true">{labels.map(minute => <span key={minute} style={{ top: (minute - startMinute) * PIXELS_PER_MINUTE }}>{new Date(2000, 0, 1, 0, minute).toLocaleTimeString('en-US', { hour: 'numeric', ...(minute % 60 ? { minute: '2-digit' } : {}) })}</span>)}</div>
         {days.map((day, dayIndex) => <div data-day={dayIndex} key={localDateKey(day)} className={'time-track' + (selectedKey === localDateKey(day) ? ' selected-day' : '') + ([0, 6].includes(day.getDay()) ? ' weekend' : '')}>
-          {Array.from({ length: 48 }, (_, halfHour) => <div className={'time-rule' + (halfHour % 2 ? ' half-hour' : '')} style={{ top: halfHour * 30 * PIXELS_PER_MINUTE }} key={halfHour}/>)}
-          {layoutDay(items, day).map(({ activity, start, visualEnd, lane, lanes, continuation }) => {
+          {ticks.map(minute => <div className={'time-rule' + (minute % 60 ? ' half-hour' : '')} style={{ top: (minute - startMinute) * PIXELS_PER_MINUTE }} key={minute}/>)}
+          {layoutDay(items, day, startMinute, endMinute).map(({ activity, start, visualEnd, lane, lanes, continuation }) => {
             const height = (visualEnd - start) * PIXELS_PER_MINUTE - 2;
             const compact = height < 100;
             return <article key={activity.id} data-activity-id={activity.id} className={'scheduled-card ' + activity.status + (compact ? ' compact' : '') + (lanes > 1 ? ' overlapping' : '') + (destination?.activity.id === activity.id ? ' drag-source' : '')}
-              style={{ top: start * PIXELS_PER_MINUTE, height, left: `calc(${lane / lanes * 100}% + 2px)`, width: `calc(${100 / lanes}% - 4px)`, '--event-color': categories[activity.category] || '#68716d' } as CSSProperties}
+              style={{ top: (start - startMinute) * PIXELS_PER_MINUTE, height, left: `calc(${lane / lanes * 100}% + 2px)`, width: `calc(${100 / lanes}% - 4px)`, '--event-color': categories[activity.category] || '#68716d' } as CSSProperties}
               onPointerDown={event => pointerDown(event, activity, continuation)} onPointerMove={pointerMove} onPointerUp={pointerUp}
               onPointerCancel={() => { if (pointer.current) cancelMove(); }} onLostPointerCapture={() => { if (pointer.current) cancelMove(); }}>
               <button className="scheduled-edit" aria-label={`Edit ${activity.title}, ${time(activity.startAt)} to ${time(activity.endAt)}, ${activity.category}, ${activity.status}${continuation ? ', continues from previous day' : ''}`} title={`${activity.title}\n${time(activity.startAt)} – ${time(activity.endAt)}\n${activity.category} · ${activity.status}`} disabled={busy}
@@ -264,7 +274,7 @@ export default function WeekCalendar({ days, items, busy, onEdit, onNew, onStatu
               {!compact && <div className="calendar-outcomes"><button disabled={busy} title="Mark complete" aria-label={`Complete ${activity.title}`} aria-pressed={activity.status === 'completed'} onClick={() => onStatus(activity, activity.status === 'completed' ? 'planned' : 'completed')}><Check size={14}/></button><button disabled={busy} title="Mark skipped" aria-label={`Skip ${activity.title}`} aria-pressed={activity.status === 'skipped'} onClick={() => onStatus(activity, activity.status === 'skipped' ? 'planned' : 'skipped')}><X size={14}/></button></div>}
             </article>;
           })}
-          {destination?.day === dayIndex && movedPreview && <div className="drop-preview" aria-hidden="true" style={{ top: destination.minute * PIXELS_PER_MINUTE, height: Math.max(48, Math.min(1440 - destination.minute, (Date.parse(movedPreview.endAt) - Date.parse(movedPreview.startAt)) / 60000) * PIXELS_PER_MINUTE) }}><b>{time(movedPreview.startAt)}</b><span>{destination.activity.title}</span></div>}
+          {destination?.day === dayIndex && movedPreview && <div className="drop-preview" aria-hidden="true" style={{ top: (destination.minute - startMinute) * PIXELS_PER_MINUTE, height: Math.min((endMinute - destination.minute) * PIXELS_PER_MINUTE, Math.max(48, Math.min(endMinute - destination.minute, (Date.parse(movedPreview.endAt) - Date.parse(movedPreview.startAt)) / 60000) * PIXELS_PER_MINUTE)) }}><b>{time(movedPreview.startAt)}</b><span>{destination.activity.title}</span></div>}
         </div>)}
       </div>
     </div>

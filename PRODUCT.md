@@ -36,3 +36,6 @@ Activity log includes a daily completion graph for four or eight weeks ending wi
 
 ### Calendar editing continuity
 Same-week saves, completion/skip actions, and retries refresh data in place: keep the time grid mounted, its scroll offsets, and the selected mobile day. Preserve the saved server result if a subsequent refresh fails. Return editor/outcome focus without scrolling; failed editor saves retain the draft and dialog. Feedback follows the schedule so messages do not displace the working entry. Initial week loads and explicit week/day navigation retain their intentional positioning behavior.
+
+### Calendar planning hours
+Calendar settings, beside New activity, configure one same-day local-time window in 15-minute increments. Default: 6:00 AM–10:00 PM; a full day is available using 12:00 AM through the end-of-day midnight option. The range persists in this browser across reloads. This is a view preference: activities outside the window remain saved, included in weekly summaries and available in the activity log. Boundary-crossing entries are clipped visually; editing precise times remains unrestricted. New-entry defaults and drag destinations respect the visible window. Future calendar-view settings belong in the same dialog.

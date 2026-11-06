@@ -44,16 +44,19 @@ export type PositionedActivity = {
 
 // Events that touch at their endpoints do not overlap. Minimum card height also participates
 // in lane allocation, so short adjacent activities cannot cover one another's text.
-export function layoutDay(activities: CalendarActivity[], day: Date): PositionedActivity[] {
+export function layoutDay(activities: CalendarActivity[], day: Date, windowStart = 0, windowEnd = MINUTES_PER_DAY): PositionedActivity[] {
   const dayStart = new Date(day.getFullYear(), day.getMonth(), day.getDate());
   const dayEnd = new Date(day.getFullYear(), day.getMonth(), day.getDate() + 1);
   const segments: PositionedActivity[] = activities.flatMap(activity => {
     const startAt = new Date(activity.startAt);
     const endAt = new Date(activity.endAt);
     if (endAt <= dayStart || startAt >= dayEnd) return [];
-    const start = startAt < dayStart ? 0 : minuteOfDay(startAt);
-    const end = endAt >= dayEnd ? MINUTES_PER_DAY : minuteOfDay(endAt);
-    return [{ activity, start, end, visualEnd: Math.min(MINUTES_PER_DAY, Math.max(end, start + MIN_CARD_MINUTES)), lane: 0, lanes: 1, continuation: startAt < dayStart }];
+    const actualStart = startAt < dayStart ? 0 : minuteOfDay(startAt);
+    const actualEnd = endAt >= dayEnd ? MINUTES_PER_DAY : minuteOfDay(endAt);
+    if (actualEnd <= windowStart || actualStart >= windowEnd) return [];
+    const start = Math.max(windowStart, actualStart);
+    const end = Math.min(windowEnd, actualEnd);
+    return [{ activity, start, end, visualEnd: Math.min(windowEnd, Math.max(end, start + MIN_CARD_MINUTES)), lane: 0, lanes: 1, continuation: startAt < dayStart }];
   }).sort((a, b) => a.start - b.start || b.end - a.end || a.activity.id.localeCompare(b.activity.id));
 
   let group: PositionedActivity[] = [];

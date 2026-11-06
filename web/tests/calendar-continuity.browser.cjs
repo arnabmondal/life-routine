@@ -11,6 +11,7 @@ const browser=await chromium.launch({...(process.env.CHROME_PATH?{executablePath
 const results=[];
 for(const width of [1440,390]){
  const context=await browser.newContext({viewport:{width,height:900},timezoneId:'America/Los_Angeles'});
+ await context.addInitScript(()=>localStorage.setItem('daywell.calendar-settings.v1',JSON.stringify({start:0,end:1440})));
  const page=await context.newPage();page.setDefaultTimeout(10000);console.error('width',width);const errors=[];page.on('pageerror',e=>errors.push(e.message));
  const monday=new Date();monday.setHours(0,0,0,0);monday.setDate(monday.getDate()-((monday.getDay()+6)%7));
  const at=(day,hour)=>{const d=new Date(monday);d.setDate(d.getDate()+day);d.setHours(hour);return d.toISOString()};
