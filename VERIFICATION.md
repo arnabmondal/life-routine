@@ -37,3 +37,6 @@ The user's brief puts Taste in charge of visual direction, so its editorial-gree
 
 ## Reviewer
 Fresh finish review: ship; no material overlap/clipping/layout findings. Nonblocking small-metadata warning retained. Reviewer requested inline deletion failure feedback; implemented and separately source-reviewed. Design documentation extracted by a separate documenter from finished code.
+
+
+Follow-up: drag scheduling and overlap were added after this redesign review. See [DRAG_AND_DROP_VERIFICATION.md](DRAG_AND_DROP_VERIFICATION.md) for the current calendar checks and limitations.

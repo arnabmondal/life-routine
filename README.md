@@ -37,7 +37,11 @@ Browser → Next.js `/api/*` → gRPC (`proto/routine.proto`) → PostgreSQL. Br
 
 ## Included
 
-- Seven-day calendar and list views
+- Seven-day time-grid calendar and activity log
+- Four/eight-week daily completion trends and top-five consistency leaderboard
+- Drag cards to change time/day in 15-minute increments; touch users drag the grip
+- Keyboard scheduling: focus a Move grip, press Space, use arrows, Enter to save or Escape to cancel
+- Overlapping activities appear side by side; moves keep duration and offer Undo
 - Add, edit, delete activities
 - Mark planned, completed, or skipped; record completion timestamp
 - Weekly counts, completion percentage, and completed activity hours
@@ -50,7 +54,7 @@ Browser → Next.js `/api/*` → gRPC (`proto/routine.proto`) → PostgreSQL. Br
 - Single-user local MVP, **no authentication**. Only bind to localhost.
 - Seeded events are individual records, not automatic recurring rules. Use **Fill missing routine slots** each new week.
 - Marking an event complete records the *planned duration* as completed time; this is not a timer or independently measured actual duration.
-- No external Google/Apple Calendar sync, push notifications, drag/drop, or multi-user accounts in this version.
+- No external Google/Apple Calendar sync, push notifications, multi-user accounts in this version.
 - Week-based tracking; no timezone conversion beyond the local browser timezone for entry/display. Docker backend uses America/Los_Angeles.
 
 ## Troubleshooting

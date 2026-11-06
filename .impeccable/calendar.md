@@ -11,3 +11,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 ## Conflicts resolved
 Taste's ≤2% accent budget and single-hue preference yield to existing five life-area colors, confined to small identity dots. Impeccable's direction-selection workflow yields to the user's Taste-led brief. App usability takes precedence over Taste's marketing-page image/motion floors. Existing UI font stack is retained with --keep palette,type; no new fonts are dealt.
+
+## Scheduling extension — October 30, 2026
+The calendar now places cards on a 24-hour local time grid. Dragging changes chronological order by changing the start time/day, preserving duration. Overlaps occupy separate equal-width lanes. Pointer moves snap to 15 minutes; touch grips can drop onto the date picker to retain time and change day. Keyboard pickup/arrows/commit/cancel, automatic save, rollback, and one-step Undo accompany the gesture. The original palette, navigation, summaries, editor, activity log, and template behavior remain.
+
+## Activity log extension
+Activity log adds a two-thirds completion-trend graph and one-third consistency leaderboard, stacked below 950px. The time scope is four/eight weeks ending with the selected week. Selecting a ranked activity filters the chart, while the weekly records stay below. Distinct completed days drive rank; repeated sessions do not inflate consistent-day counts. Query `?view=log` opens Activity log directly and preserves that view on refresh.

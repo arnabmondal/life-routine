@@ -137,11 +137,11 @@ A low-chroma sage and white foundation supports a deeper green action color.
 
 **Body and heading font:** Arial, Helvetica, sans-serif. Tabular numerals align schedule data.
 
-Headlines and metric figures use regular weight; section titles and activity names use semibold. The frontmatter records desktop roles. At narrow widths, the page heading becomes 25px, summary figures become 22px, and activity names become 15px. Schedule metadata remains at least 12px; mobile outcome labels use 13px. No separate display or mono font is present.
+Headlines and metric figures use regular weight; section titles and activity names use semibold. The frontmatter records desktop roles. At narrow widths, the page heading becomes 25px, summary figures become 22px, and activity names become 15px. Agenda metadata uses 12px; time-grid ranges and dense overlapping cards use 11px secondary labels, while mobile outcome labels use 13px. No separate display or mono font is present.
 
 ## Layout
 
-The desktop shell pairs a 230px sidebar with a centered main area capped at 1240px, including 40px vertical and 36px horizontal padding. Four equal summary cells and seven equal day columns share the content edges; summary gaps use the 16px rhythm. Calendar headings use 24px padding.
+The desktop shell pairs a 230px sidebar with a centered main area capped at 1240px, including 40px vertical and 36px horizontal padding. Four equal summary cells and seven equal time-grid day columns share the content edges; summary gaps use the 16px rhythm. Calendar headings use 24px padding.
 
 At 1100px and below, navigation becomes a horizontal top band and main padding becomes 28px by 24px. At 850px and below, a seven-date picker selects one visible day column, with larger activity controls. At 600px and below, main padding becomes 24px by 16px, summaries form a compact two-by-two tonal block, calendar actions use a grid, and paired fields stack. At 1600px and above, main top padding becomes 56px.
 
@@ -184,4 +184,17 @@ A native dialog caps width at 540px and viewport height minus 32px, scrolls inte
 ### Don't:
 - Don't introduce decorative imagery or entrance animation into this routine planner.
 - Don't use life-area hues as large card fills.
-- Don't shrink schedule metadata below the established 12px treatment.
+- Don't shrink metadata below its documented role size; full activity details must remain available in the editor.
+
+### Time-grid scheduling
+The calendar uses a vertically scrolling 24-hour local-time grid, 144px per hour, with sticky day headings and a 56px time gutter (48px at narrow widths). The initial viewport starts 15 minutes before the earliest activity. Activity positions reflect their local start times; height reflects duration, with a 20-minute minimum for short-card legibility. Overlap groups use equal-width lanes, including the minimum visual footprint, so cards remain individually selectable. Midnight-spanning activities have continuation segments on the next visible day.
+
+Mouse users drag the card or its grip; touch users drag the 44px grip so the rest of the card remains a scrolling surface. Dropping onto a date in the narrow-screen picker changes the day while retaining the original start time. A dashed green preview states the destination; floating destination feedback never shifts drop coordinates. Edges scroll while dragging. Quarter-hour snapping applies to pointer moves; keyboard arrows move by 15 minutes or one day. Space picks up a focused grip, Enter saves, Escape cancels, and Tab cancels before moving focus. Short cards keep title and time; full details and outcomes stay accessible in the editor. Larger cards retain quick outcome controls. Save feedback offers a one-step Undo; failed moves restore the original activity.
+
+### Activity insights
+Activity log uses a two-share trend panel and one-share consistency panel on the same white working surface. At 950px and below they stack in reading order. The graph uses a single Routine Green line, count ticks on a zero baseline, sparse local-date labels and a quiet future-date field. Zero counts remain zero; future counts are blank. A pointer/touch readout and native keyboard-operable day slider expose exact values, with an expandable daily table. The top-five leaderboard uses actual numeric rank, title/category, distinct-day count and a thin proportional completion-rate track. Selecting a row filters the chart and highlights the selection with the existing tonal fill. Four/eight-week scope is explicit and distinct from the weekly records below. Loading placeholders preserve the two regions; read failures offer a local retry without hiding the weekly log.
+
+### Calendar editing continuity
+Same-week saves, completion/skip actions, and retries refresh data in place: keep the time grid mounted, its scroll offsets, and the selected mobile day. Preserve the saved server result if a subsequent refresh fails. Return editor/outcome focus without scrolling; failed editor saves retain the draft and dialog. Feedback follows the schedule so messages do not displace the working entry. Initial week loads and explicit week/day navigation retain their intentional positioning behavior.
+
+The feedback region retains its largest shown height during the mounted session, preventing page-end clamping when a message is dismissed or a retry succeeds. Retry returns focus to the last calendar entry control; if an entry moves out of the visible day/week, the time grid is the focus fallback.

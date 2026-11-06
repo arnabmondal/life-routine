@@ -301,7 +301,21 @@
         "name": "phone",
         "value": "600px"
       }
-    ]
+    ],
+    "calendarScheduling": {
+      "pixelsPerMinute": 2.4,
+      "snapMinutes": 15,
+      "minimumCardMinutes": 20,
+      "overlap": "Equal-width lanes; touching endpoints do not overlap; minimum visual footprint prevents collisions.",
+      "interaction": "Pointer drag, touch grip, keyboard pickup/arrows/commit/cancel; optimistic persistence with rollback and Undo."
+    },
+    "activityInsights": {
+      "desktopColumns": "2fr 1fr",
+      "stackAt": "950px",
+      "chart": "Daily completed records by scheduled local date. One green series, zero-based count scale, future days blank.",
+      "consistency": "Rank by distinct completed days, then eligible-scheduled-day rate. Multiple sessions per day count once.",
+      "interaction": "4/8-week scope, leaderboard filters chart, pointer readout, native day slider and daily data table."
+    }
   },
   "components": [
     {
@@ -349,8 +363,8 @@
       "kind": "card",
       "refersTo": "event",
       "description": "A bordered commitment with time, category, and explicit outcome.",
-      "html": "<article class=\"ds-event\"><button class=\"ds-edit\"><span>9:00 AM \u2013 9:30 AM</span><b>Morning walk</b><small><i></i>Health</small></button><div class=\"ds-outcome\">Planned</div></article>",
-      "css": ".ds-event{max-width:220px;border:1px solid var(--line);border-radius:8px;background:var(--surface);overflow:hidden;font:12px/1.5 Arial,Helvetica,sans-serif;color:var(--muted)}.ds-edit{width:100%;padding:10px 8px 6px;text-align:left;background:transparent;border:0;color:inherit;font:inherit;cursor:pointer}.ds-edit b{display:block;color:var(--ink);font-size:13px;line-height:1.4;font-weight:600;margin:5px 0 8px}.ds-edit small{font-size:12px}.ds-edit i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;background:#21a985}.ds-edit:hover{background:var(--tonal)}.ds-edit:focus-visible{outline:3px solid var(--green,#23765e);outline-offset:3px}.ds-outcome{padding:0 8px 8px}"
+      "html": "<article class=\"ds-scheduled\"><button class=\"ds-edit\"><span>9:00 AM \u2013 10:00 AM</span><b>Morning walk</b><small>Health \u00b7 planned</small></button><button class=\"ds-grip\" aria-label=\"Move Morning walk\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" stroke=\"currentColor\"><path d=\"M6 3h.01M10 3h.01M6 8h.01M10 8h.01M6 13h.01M10 13h.01\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg></button></article>",
+      "css": ".ds-scheduled{position:relative;width:180px;height:142px;border:1px solid var(--control);border-radius:6px;background:var(--surface);font:12px/1.5 Arial,Helvetica,sans-serif;color:var(--muted);overflow:hidden}.ds-edit{display:flex;flex-direction:column;justify-content:flex-start;align-items:flex-start;width:100%;height:100%;padding:6px 22px 34px 6px;text-align:left;background:transparent;border:0;color:inherit;font:inherit;cursor:grab}.ds-edit b{font-size:13px;color:var(--ink);margin-top:2px}.ds-edit small{margin-top:6px}.ds-grip{position:absolute;right:0;top:0;width:22px;height:32px;display:grid;place-items:center;background:transparent;border:0;color:var(--muted);touch-action:none;cursor:grab}.ds-edit:focus-visible,.ds-grip:focus-visible{outline:3px solid var(--green);outline-offset:-3px}"
     }
   ],
   "narrative": {

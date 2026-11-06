@@ -1,0 +1,1774 @@
+{
+ "url": "http://localhost:3000",
+ "at": "2026-10-30T21:14:42.890Z",
+ "allow": [
+  "icon-chips"
+ ],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.67,
+    0.74
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 1308,
+     "screens": 1.5,
+     "words": 847,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 169,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 2.1,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 40,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "lines": 1,
+     "size": 30,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "Your week, in balance.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 40,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20 / 60",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20.5 hrs",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      26,
+      28,
+      30
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Arial",
+      "size": 12,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 30,
+      "vw": 2.1,
+      "font": "Arial",
+      "text": "Your week, in balance."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.3,
+     "centerShare": 0.02,
+     "smallText": 66
+    },
+    "eyebrows": [
+     {
+      "text": "On the calendar",
+      "above": "60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "Completed",
+      "above": "20 / 60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "Time made",
+      "above": "20.5 hrs",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "Skipped",
+      "above": "10",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f1",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.17,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 279,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      },
+      {
+       "color": "#f9faf7",
+       "top": -213,
+       "hsl": {
+        "h": 80,
+        "s": 0.23,
+        "l": 0.97
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#58675e",
+       "share": 0.67
+      },
+      {
+       "color": "#263b32",
+       "share": 0.32
+      },
+      {
+       "color": "#23765e",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e9ede6",
+      "hsl": {
+       "h": 94,
+       "s": 0.16,
+       "l": 0.92
+      },
+      "fg": "#263b32"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 6,
+     "height": 45,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "My calendar",
+      "New activity",
+      "Calendar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 13,
+     "hairlineSamples": [
+      "aside.sidebar 230px",
+      "div.subbar 1138px",
+      "div.calendar-drag-help 1138px",
+      "div.time-head 1138px",
+      "div.time-ruler 56px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 135
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 67,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 1308,
+    "margins": {
+     "left": 49,
+     "right": 72
+    },
+    "sections": [],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your week, in balance.",
+      "size": 30,
+      "top": 40,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 266,
+      "n": 1
+     },
+     {
+      "x": 290,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 13,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.08,
+    "voidBox": {
+     "x": 540,
+     "y": 240,
+     "w": 540,
+     "h": 180
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#f3f5f1",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 60,
+     "right": 148
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 2.1,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 40,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 3,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 61,
+     "radii": [
+      [
+       6,
+       55
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 55,
+     "borderSamples": [
+      "#abb9af on #ffffff (2.04:1)",
+      "#abb9af on #ffffff (2.04:1)",
+      "#abb9af on #f0f7f2 (1.87:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 8,
+     "tabularShare": 1,
+     "kpiMax": 28
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.62,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      26,
+      28,
+      30
+     ]
+    },
+    "title": {
+     "text": "Your week, in balance.",
+     "size": 30,
+     "top": 40
+    },
+    "colourShare": 0.003
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.79,
+    0.88
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 1422,
+     "screens": 1.4,
+     "words": 331,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 169,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 3.9,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "lines": 1,
+     "size": 30,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "Your week, in balance.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 97,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20 / 60",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20.5 hrs",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      23,
+      26,
+      30
+     ],
+     "sizeCount": 10,
+     "notLoaded": [],
+     "body": {
+      "font": "Arial",
+      "size": 12,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 82,
+     "max": {
+      "size": 30,
+      "vw": 3.9,
+      "font": "Arial",
+      "text": "Your week, in balance."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.23,
+     "centerShare": 0.07,
+     "smallText": 18
+    },
+    "eyebrows": [
+     {
+      "text": "1 AM",
+      "above": "Your week, in balance.",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": 41
+     },
+     {
+      "text": "On the calendar",
+      "above": "60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     },
+     {
+      "text": "Completed",
+      "above": "20 / 60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     },
+     {
+      "text": "Time made",
+      "above": "20.5 hrs",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     },
+     {
+      "text": "Skipped",
+      "above": "10",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f1",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.17,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 347,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#58675e",
+       "share": 0.71
+      },
+      {
+       "color": "#263b32",
+       "share": 0.25
+      },
+      {
+       "color": "#23765e",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#e9ede6",
+      "hsl": {
+       "h": 94,
+       "s": 0.16,
+       "l": 0.92
+      },
+      "fg": "#263b32"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 4,
+     "inHero": 4,
+     "radius": 6,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "My calendar",
+      "New activity",
+      "Calendar",
+      "Fri 30"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 56,
+     "hairlineSamples": [
+      "aside.sidebar 768px",
+      "div.subbar 720px",
+      "div.calendar-drag-help 720px",
+      "div.day-picker 720px",
+      "div.time-head 720px"
+     ],
+     "outlinedBoxes": 11,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 16,
+     "boxRadius": 6,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 192
+      },
+      {
+       "count": 10,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 769
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 67,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 1422,
+    "margins": {
+     "left": 38,
+     "right": 28
+    },
+    "sections": [
+     {
+      "sel": "section.stats",
+      "tag": "section",
+      "top": 192,
+      "height": 127,
+      "words": 26,
+      "media": 0,
+      "middle": 79,
+      "heading": {
+       "text": "60",
+       "size": 26,
+       "tag": "strong"
+      },
+      "left": 38,
+      "right": 90,
+      "textLeft": 38,
+      "textRight": 90,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.calendar-panel",
+      "tag": "section",
+      "top": 347,
+      "height": 1005,
+      "words": 120,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Weekly calendar",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 35,
+      "right": 28,
+      "textLeft": 35,
+      "textRight": 52,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your week, in balance.",
+      "size": 30,
+      "top": 97,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 24,
+      "n": 1
+     },
+     {
+      "x": 44,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 14,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#f3f5f1",
+    "sidebar": null,
+    "topbar": {
+     "h": 69
+    },
+    "canvas": {
+     "left": 32,
+     "right": 28
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 3.9,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 3,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 17,
+     "radii": [
+      [
+       6,
+       11
+      ],
+      [
+       12,
+       5
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 11,
+     "borderSamples": [
+      "#abb9af on #ffffff (2.04:1)",
+      "#abb9af on #f0f7f2 (1.87:1)",
+      "#abb9af on #f0f7f2 (1.87:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 9,
+     "tabularShare": 1,
+     "kpiMax": 26
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.57,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      16,
+      18,
+      20,
+      23,
+      26,
+      30
+     ]
+    },
+    "title": {
+     "text": "Your week, in balance.",
+     "size": 30,
+     "top": 97
+    },
+    "colourShare": 0.011
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 2,
+   "filled": [
+    0.82,
+    0.89
+   ],
+   "motion": {
+    "elements": 0,
+    "css": 0,
+    "transitions": 0,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 1396,
+     "screens": 1.7,
+     "words": 330,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 169,
+     "sections": 2,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 25,
+     "vw": 6.4,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 89,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "lines": 1,
+     "size": 25,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "daywell",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 15,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Your week, in balance.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": -0.024,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 89,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.06,
+      "top": 194,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20 / 60",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 194,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20.5 hrs",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 260,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 264,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      18,
+      20,
+      22,
+      23,
+      25
+     ],
+     "sizeCount": 9,
+     "notLoaded": [],
+     "body": {
+      "font": "Arial",
+      "size": 11,
+      "leading": 1.5,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 59,
+     "max": {
+      "size": 25,
+      "vw": 6.4,
+      "font": "Arial",
+      "text": "Your week, in balance."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0.23,
+     "centerShare": 0.07,
+     "smallText": 20
+    },
+    "eyebrows": [
+     {
+      "text": "12 AM",
+      "above": "daywell",
+      "upper": true,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 11,
+      "top": -50
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f1",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.17,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 347,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#58675e",
+       "share": 0.71
+      },
+      {
+       "color": "#263b32",
+       "share": 0.25
+      },
+      {
+       "color": "#23765e",
+       "share": 0.02
+      },
+      {
+       "color": "#ffffff",
+       "share": 0.01
+      }
+     ],
+     "button": {
+      "bg": "#e9ede6",
+      "hsl": {
+       "h": 94,
+       "s": 0.16,
+       "l": 0.92
+      },
+      "fg": "#263b32"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 3,
+     "inHero": 3,
+     "radius": 6,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "My calendar",
+      "New activity",
+      "Calendar"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 56,
+     "hairlineSamples": [
+      "aside.sidebar 390px",
+      "div.subbar 358px",
+      "div.calendar-drag-help 358px",
+      "div.day-picker 358px",
+      "div.time-head 358px"
+     ],
+     "outlinedBoxes": 11,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 13,
+     "boxRadius": 6,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 10,
+       "iconTopped": true,
+       "rounded": true,
+       "top": 814
+      }
+     ]
+    },
+    "heroMedia": [],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 79,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 1396,
+    "margins": {
+     "left": 28,
+     "right": 20
+    },
+    "sections": [
+     {
+      "sel": "section.stats",
+      "tag": "section",
+      "top": 184,
+      "height": 147,
+      "words": 26,
+      "media": 0,
+      "middle": 25,
+      "heading": {
+       "text": "60",
+       "size": 22,
+       "tag": "strong"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.calendar-panel",
+      "tag": "section",
+      "top": 347,
+      "height": 984,
+      "words": 118,
+      "media": 0,
+      "middle": 0,
+      "heading": {
+       "text": "Weekly calendar",
+       "size": 18,
+       "tag": "h2"
+      },
+      "left": 27,
+      "right": 20,
+      "textLeft": 27,
+      "textRight": 33,
+      "fullBleed": false,
+      "footer": true,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your week, in balance.",
+      "size": 25,
+      "top": 89,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 16,
+      "n": 1
+     },
+     {
+      "x": 32,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 2,
+    "bodySize": 11,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#f3f5f1",
+    "sidebar": null,
+    "topbar": {
+     "h": 65
+    },
+    "canvas": {
+     "left": 24,
+     "right": 20
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 25,
+     "vw": 6.4,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 89,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 3,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 14,
+     "radii": [
+      [
+       6,
+       11
+      ],
+      [
+       12,
+       2
+      ],
+      [
+       0,
+       1
+      ]
+     ],
+     "heavyBorders": 11,
+     "borderSamples": [
+      "#abb9af on #ffffff (2.04:1)",
+      "#abb9af on #f0f7f2 (1.87:1)",
+      "#abb9af on #f0f7f2 (1.87:1)"
+     ],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 9,
+     "tabularShare": 1,
+     "kpiMax": 22
+    },
+    "rows": null,
+    "chartHues": 0,
+    "placeholders": [],
+    "type": {
+     "under13": 0.59,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      18,
+      20,
+      22,
+      23,
+      25
+     ]
+    },
+    "title": {
+     "text": "Your week, in balance.",
+     "size": 25,
+     "top": 89
+    },
+    "colourShare": 0.025
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "unused-canvas",
+   "width": 1440,
+   "message": "The content stops 148px short of the right edge while it starts 60px from the sidebar.",
+   "fix": "Let the grid fill the canvas (columns in fr units), or centre a capped canvas with equal margins. A dead strip on one side reads as unfinished."
+  },
+  {
+   "level": "WARN",
+   "id": "heavy-borders",
+   "width": 1440,
+   "message": "55 panel borders are dark against their ground: #abb9af on #ffffff (2.04:1) | #abb9af on #ffffff (2.04:1) | #abb9af on #f0f7f2 (1.87:1)",
+   "fix": "A panel border is a whisper: about 1.1–1.3:1 against its ground on a light screen (#e5e7eb–#ededed on white), and about 1.2–1.5:1 on a dark one (#1a1a1a on #000, #2e2e2e on #111). Darker lines turn the screen into a grid of boxes; keep the stronger line for controls.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  },
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "62% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/daywell-drag/confirmed-visual/desktop-fold.jpg",
+   "pages": [
+    "/tmp/daywell-drag/confirmed-visual/desktop-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/daywell-drag/confirmed-visual/tablet-fold.jpg",
+   "pages": [
+    "/tmp/daywell-drag/confirmed-visual/tablet-page-01.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/daywell-drag/confirmed-visual/mobile-fold.jpg",
+   "pages": [
+    "/tmp/daywell-drag/confirmed-visual/mobile-page-01.jpg"
+   ],
+   "film": []
+  }
+ ]
+}

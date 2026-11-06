@@ -1,0 +1,2559 @@
+{
+ "url": "http://localhost:3000/?view=log",
+ "at": "2026-10-30T22:59:12.738Z",
+ "allow": [],
+ "viewports": [
+  {
+   "width": 1440,
+   "height": 900,
+   "load": "load",
+   "screens": 8,
+   "filled": [
+    0.63,
+    0.77,
+    0.79,
+    0.79,
+    0.79,
+    0.79,
+    0.79,
+    0.74
+   ],
+   "motion": {
+    "elements": 4,
+    "css": 0,
+    "transitions": 4,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "page": {
+     "height": 6397,
+     "screens": 7.1,
+     "words": 1182,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 133,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 2.1,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 40,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "lines": 1,
+     "size": 30,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "Your week, in balance.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 2.1,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.22,
+      "top": 40,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20 / 60",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20.5 hrs",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 28,
+      "vw": 1.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.17,
+      "top": 177,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      26,
+      28,
+      30
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Arial",
+      "size": 11,
+      "leading": 1.55,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 60,
+     "max": {
+      "size": 30,
+      "vw": 2.1,
+      "font": "Arial",
+      "text": "Your week, in balance."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 85
+    },
+    "eyebrows": [
+     {
+      "text": "On the calendar",
+      "above": "60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "Completed",
+      "above": "20 / 60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "Time made",
+      "above": "20.5 hrs",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     },
+     {
+      "text": "Skipped",
+      "above": "10",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 151
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f1",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.17,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 279,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#58675e",
+       "share": 0.71
+      },
+      {
+       "color": "#263b32",
+       "share": 0.23
+      },
+      {
+       "color": "#23765e",
+       "share": 0.05
+      },
+      {
+       "color": "#9b3e38",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e9ede6",
+      "hsl": {
+       "h": 94,
+       "s": 0.16,
+       "l": 0.92
+      },
+      "fg": "#263b32"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": 8,
+     "height": 45,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Activity log",
+      "New activity"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 70,
+     "hairlineSamples": [
+      "aside.sidebar 230px",
+      "div.subbar 1138px",
+      "section.activity-insights 1138px",
+      "div 711px",
+      "aside.consistency-panel 379px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 135
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 672
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.13
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 67,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "pageH": 6397,
+    "margins": {
+     "left": 70,
+     "right": 60
+    },
+    "sections": [
+     {
+      "sel": "section.activity-insights",
+      "tag": "section",
+      "top": 440,
+      "height": 711,
+      "words": 145,
+      "media": 1,
+      "middle": 49,
+      "heading": {
+       "text": "Your activity rhythm",
+       "size": 18,
+       "tag": "h3"
+      },
+      "left": 290,
+      "right": 60,
+      "textLeft": 290,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-view",
+      "tag": "div",
+      "top": 1151,
+      "height": 5091,
+      "words": 720,
+      "media": 0,
+      "middle": 12,
+      "heading": {
+       "text": "This week’s activities",
+       "size": 15,
+       "tag": "h3"
+      },
+      "left": 290,
+      "right": 60,
+      "textLeft": 290,
+      "textRight": 60,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": false,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your week, in balance.",
+      "size": 30,
+      "top": 40,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 290,
+      "n": 3
+     },
+     {
+      "x": 266,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 11,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0.11,
+    "voidBox": {
+     "x": 540,
+     "y": 240,
+     "w": 480,
+     "h": 300
+    }
+   },
+   "app": {
+    "viewport": {
+     "w": 1440,
+     "h": 900
+    },
+    "dark": false,
+    "ground": "#f3f5f1",
+    "sidebar": null,
+    "topbar": null,
+    "canvas": {
+     "left": 60,
+     "right": 60
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 2.1,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 40,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 4,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 10,
+     "radii": [
+      [
+       12,
+       5
+      ],
+      [
+       0,
+       5
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 2,
+     "tabularShare": 1,
+     "kpiMax": 28
+    },
+    "rows": {
+     "count": 28,
+     "median": 35
+    },
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.67,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      26,
+      28,
+      30
+     ]
+    },
+    "title": {
+     "text": "Your week, in balance.",
+     "size": 30,
+     "top": 40
+    },
+    "colourShare": 0.003
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 768,
+   "height": 1024,
+   "load": "load",
+   "screens": 7,
+   "filled": [
+    0.78,
+    0.59,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.88
+   ],
+   "motion": {
+    "elements": 4,
+    "css": 0,
+    "transitions": 4,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "page": {
+     "height": 6938,
+     "screens": 6.8,
+     "words": 1153,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 133,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 3.9,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "lines": 1,
+     "size": 30,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "Your week, in balance.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 30,
+      "vw": 3.9,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": -0.02,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.42,
+      "top": 97,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20 / 60",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20.5 hrs",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 26,
+      "vw": 3.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.19,
+      "top": 232,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 5,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 2,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      20,
+      23,
+      26,
+      30
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Arial",
+      "size": 12,
+      "leading": 1.42,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 112,
+     "max": {
+      "size": 30,
+      "vw": 3.9,
+      "font": "Arial",
+      "text": "Your week, in balance."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 83
+    },
+    "eyebrows": [
+     {
+      "text": "On the calendar",
+      "above": "60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     },
+     {
+      "text": "Completed",
+      "above": "20 / 60",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     },
+     {
+      "text": "Time made",
+      "above": "20.5 hrs",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     },
+     {
+      "text": "Skipped",
+      "above": "10",
+      "upper": false,
+      "tracked": false,
+      "mono": false,
+      "pill": false,
+      "size": 12,
+      "top": 206
+     }
+    ],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f1",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.17,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 347,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#58675e",
+       "share": 0.7
+      },
+      {
+       "color": "#263b32",
+       "share": 0.24
+      },
+      {
+       "color": "#23765e",
+       "share": 0.05
+      },
+      {
+       "color": "#9b3e38",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e9ede6",
+      "hsl": {
+       "h": 94,
+       "s": 0.16,
+       "l": 0.92
+      },
+      "fg": "#263b32"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Activity log",
+      "New activity"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 70,
+     "hairlineSamples": [
+      "aside.sidebar 768px",
+      "div.subbar 720px",
+      "section.activity-insights 720px",
+      "div 672px",
+      "aside.consistency-panel 720px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 5,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": false,
+       "rounded": true,
+       "top": 192
+      },
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 1236
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.2
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 67,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "pageH": 6938,
+    "margins": {
+     "left": 48,
+     "right": 48
+    },
+    "sections": [
+     {
+      "sel": "section.stats",
+      "tag": "section",
+      "top": 192,
+      "height": 127,
+      "words": 26,
+      "media": 0,
+      "middle": 79,
+      "heading": {
+       "text": "60",
+       "size": 26,
+       "tag": "strong"
+      },
+      "left": 38,
+      "right": 90,
+      "textLeft": 38,
+      "textRight": 90,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.activity-insights",
+      "tag": "section",
+      "top": 493,
+      "height": 1212,
+      "words": 151,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your activity rhythm",
+       "size": 18,
+       "tag": "h3"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-view",
+      "tag": "div",
+      "top": 1704,
+      "height": 5091,
+      "words": 720,
+      "media": 0,
+      "middle": 12,
+      "heading": {
+       "text": "This week’s activities",
+       "size": 15,
+       "tag": "h3"
+      },
+      "left": 48,
+      "right": 48,
+      "textLeft": 48,
+      "textRight": 48,
+      "fullBleed": false,
+      "footer": true,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your week, in balance.",
+      "size": 30,
+      "top": 97,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 44,
+      "n": 3
+     },
+     {
+      "x": 24,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 768,
+     "h": 1024
+    },
+    "dark": false,
+    "ground": "#f3f5f1",
+    "sidebar": null,
+    "topbar": {
+     "h": 69
+    },
+    "canvas": {
+     "left": 48,
+     "right": 48
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 30,
+     "vw": 3.9,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 97,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 4,
+    "layout": {
+     "panels": 5,
+     "firstScreen": 5,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 11,
+     "radii": [
+      [
+       0,
+       6
+      ],
+      [
+       12,
+       5
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 2,
+     "tabularShare": 1,
+     "kpiMax": 26
+    },
+    "rows": {
+     "count": 28,
+     "median": 35
+    },
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.68,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      18,
+      23,
+      26,
+      30
+     ]
+    },
+    "title": {
+     "text": "Your week, in balance.",
+     "size": 30,
+     "top": 97
+    },
+    "colourShare": 0.01
+   },
+   "consoleErrors": []
+  },
+  {
+   "width": 390,
+   "height": 844,
+   "load": "load",
+   "screens": 12,
+   "filled": [
+    0.81,
+    0.66,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.92,
+    0.89
+   ],
+   "motion": {
+    "elements": 4,
+    "css": 0,
+    "transitions": 4,
+    "scripted": 0,
+    "videos": 0,
+    "playingVideos": 0
+   },
+   "metrics": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "page": {
+     "height": 9910,
+     "screens": 11.7,
+     "words": 1148,
+     "img": 0,
+     "video": 0,
+     "canvas": 0,
+     "svg": 133,
+     "sections": 3,
+     "horizontalOverflow": 0,
+     "overflowCulprits": [],
+     "uiFragments": 0,
+     "uiAbuse": false,
+     "realPictures": 0,
+     "videoCount": 0,
+     "uiPictures": 0,
+     "pictureSamples": [],
+     "blendText": 0,
+     "sideScrollers": 0,
+     "brokenImages": [],
+     "emoji": [],
+     "videosNoPoster": 0
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 25,
+     "vw": 6.4,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 89,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "h1": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "lines": 1,
+     "size": 25,
+     "font": "Arial"
+    },
+    "headings": [
+     {
+      "text": "daywell",
+      "words": 1,
+      "chars": 7,
+      "lines": 1,
+      "size": 23,
+      "vw": 5.9,
+      "font": "Arial",
+      "weight": 700,
+      "tracking": -0.035,
+      "leading": 1.5,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.3,
+      "top": 15,
+      "tag": "div",
+      "kind": "heading"
+     },
+     {
+      "text": "Your week, in balance.",
+      "words": 4,
+      "chars": 22,
+      "lines": 1,
+      "size": 25,
+      "vw": 6.4,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": -0.024,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.61,
+      "top": 89,
+      "tag": "h1",
+      "kind": "heading"
+     },
+     {
+      "text": "60",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "center",
+      "widthRatio": 0.06,
+      "top": 194,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20 / 60",
+      "words": 3,
+      "chars": 7,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.12,
+      "top": 194,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "20.5 hrs",
+      "words": 2,
+      "chars": 8,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "left",
+      "widthRatio": 0.16,
+      "top": 260,
+      "tag": "strong",
+      "kind": "heading"
+     },
+     {
+      "text": "10",
+      "words": 1,
+      "chars": 2,
+      "lines": 1,
+      "size": 22,
+      "vw": 5.6,
+      "font": "Arial",
+      "weight": 400,
+      "tracking": 0,
+      "leading": 1.2,
+      "upper": false,
+      "italic": false,
+      "mono": false,
+      "align": "left",
+      "position": "right",
+      "widthRatio": 0.06,
+      "top": 264,
+      "tag": "strong",
+      "kind": "heading"
+     }
+    ],
+    "headingSummary": {
+     "count": 6,
+     "maxLines": 1,
+     "over2Lines": 0,
+     "statements": 0,
+     "centered": 0,
+     "medianWords": 1,
+     "mixedFontHeadings": 0
+    },
+    "type": {
+     "families": [
+      {
+       "family": "Arial",
+       "share": 1,
+       "mono": false
+      }
+     ],
+     "familyCount": 1,
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      20,
+      22,
+      23,
+      25
+     ],
+     "sizeCount": 11,
+     "notLoaded": [],
+     "body": {
+      "font": "Arial",
+      "size": 12,
+      "leading": 1.42,
+      "weight": 400,
+      "tracking": 0,
+      "contrast": 6
+     },
+     "measureChars": 54,
+     "max": {
+      "size": 25,
+      "vw": 6.4,
+      "font": "Arial",
+      "text": "Your week, in balance."
+     },
+     "monoShare": 0,
+     "monoProseShare": 0,
+     "monoFamilies": [],
+     "monoSamples": [],
+     "microLabels": 0,
+     "microLabelShare": 0,
+     "microSamples": [],
+     "upperShare": 0,
+     "centerShare": 0.01,
+     "smallText": 84
+    },
+    "eyebrows": [],
+    "numbered": [],
+    "color": {
+     "bodyBg": "#f3f5f1",
+     "bodyBgHsl": {
+      "h": 90,
+      "s": 0.17,
+      "l": 0.95
+     },
+     "dark": false,
+     "sectionBgs": [
+      {
+       "color": "#ffffff",
+       "top": 347,
+       "hsl": {
+        "h": 0,
+        "s": 0,
+        "l": 1
+       }
+      }
+     ],
+     "textColors": [
+      {
+       "color": "#58675e",
+       "share": 0.7
+      },
+      {
+       "color": "#263b32",
+       "share": 0.24
+      },
+      {
+       "color": "#23765e",
+       "share": 0.05
+      },
+      {
+       "color": "#9b3e38",
+       "share": 0.01
+      },
+      {
+       "color": "#ffffff",
+       "share": 0
+      }
+     ],
+     "button": {
+      "bg": "#e9ede6",
+      "hsl": {
+       "h": 94,
+       "s": 0.16,
+       "l": 0.92
+      },
+      "fg": "#263b32"
+     },
+     "lowContrast": []
+    },
+    "buttons": {
+     "count": 2,
+     "inHero": 2,
+     "radius": 8,
+     "height": 44,
+     "withShadow": 0,
+     "withGradient": 0,
+     "mono": 0,
+     "upper": 0,
+     "heroLabels": [
+      "Activity log",
+      "New activity"
+     ]
+    },
+    "surfaces": {
+     "shadowStatic": 0,
+     "shadowOverlay": 0,
+     "shadowSamples": [],
+     "gradients": 0,
+     "scrims": 0,
+     "gradientSamples": [],
+     "gradientText": 0,
+     "hairlines": 70,
+     "hairlineSamples": [
+      "aside.sidebar 390px",
+      "div.subbar 358px",
+      "section.activity-insights 358px",
+      "div 326px",
+      "aside.consistency-panel 358px"
+     ],
+     "outlinedBoxes": 0,
+     "dashed": 0,
+     "blurred": 0,
+     "roundedBoxes": 2,
+     "boxRadius": 12,
+     "squareMedia": 0,
+     "roundedMedia": 0,
+     "mediaRadius": 0,
+     "textShadow": 0,
+     "cardRows": [
+      {
+       "count": 4,
+       "iconTopped": true,
+       "rounded": false,
+       "top": 1303
+      }
+     ]
+    },
+    "heroMedia": [
+     {
+      "type": "svg",
+      "ratio": 0.15
+     }
+    ],
+    "nav": {
+     "links": 0,
+     "fixed": false,
+     "height": 79,
+     "floatingPill": false,
+     "blur": false
+    },
+    "fontsLoaded": []
+   },
+   "layout": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "pageH": 9910,
+    "margins": {
+     "left": 32,
+     "right": 32
+    },
+    "sections": [
+     {
+      "sel": "section.stats",
+      "tag": "section",
+      "top": 184,
+      "height": 147,
+      "words": 26,
+      "media": 0,
+      "middle": 25,
+      "heading": {
+       "text": "60",
+       "size": 22,
+       "tag": "strong"
+      },
+      "left": 28,
+      "right": 28,
+      "textLeft": 28,
+      "textRight": 28,
+      "fullBleed": false,
+      "footer": false,
+      "hero": true,
+      "continues": false,
+      "pinned": false
+     },
+     {
+      "sel": "section.activity-insights",
+      "tag": "section",
+      "top": 528,
+      "height": 1260,
+      "words": 149,
+      "media": 1,
+      "middle": 0,
+      "heading": {
+       "text": "Your activity rhythm",
+       "size": 17,
+       "tag": "h3"
+      },
+      "left": 32,
+      "right": 32,
+      "textLeft": 32,
+      "textRight": 32,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 1838,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 1970,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2102,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2234,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2366,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2498,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 95,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2630,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 112,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2762,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 117,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 2894,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3026,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 119,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3158,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 106,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3290,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3422,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3554,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3686,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3818,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 3950,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 115,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4082,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 98,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4214,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 115,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4346,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 120,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4478,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 121,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4610,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 122,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4742,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 109,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 4874,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 121,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5006,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 119,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5138,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 119,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5270,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5402,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5534,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 110,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5666,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 94,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5798,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 111,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 5930,
+      "height": 132,
+      "words": 13,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 116,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 6062,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 117,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 6194,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 118,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 6326,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 105,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 6458,
+      "height": 132,
+      "words": 12,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 117,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 6590,
+      "height": 132,
+      "words": 11,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     },
+     {
+      "sel": "div.list-item",
+      "tag": "div",
+      "top": 6722,
+      "height": 132,
+      "words": 14,
+      "media": 0,
+      "middle": 0,
+      "heading": null,
+      "left": 47,
+      "right": 32,
+      "textLeft": 47,
+      "textRight": 123,
+      "fullBleed": false,
+      "footer": false,
+      "hero": false,
+      "continues": true,
+      "pinned": false
+     }
+    ],
+    "gaps": [],
+    "h1s": [
+     {
+      "text": "Your week, in balance.",
+      "size": 25,
+      "top": 89,
+      "firstScreen": true
+     }
+    ],
+    "edgeText": [],
+    "edges": [
+     {
+      "x": 32,
+      "n": 3
+     },
+     {
+      "x": 16,
+      "n": 1
+     }
+    ],
+    "leftBlocks": 4,
+    "bodySize": 12,
+    "stage": false,
+    "explains": false,
+    "slivers": [],
+    "voidShare": 0,
+    "voidBox": null
+   },
+   "app": {
+    "viewport": {
+     "w": 390,
+     "h": 844
+    },
+    "dark": false,
+    "ground": "#f3f5f1",
+    "sidebar": null,
+    "topbar": {
+     "h": 65
+    },
+    "canvas": {
+     "left": 32,
+     "right": 32
+    },
+    "hero": {
+     "text": "Your week, in balance.",
+     "words": 4,
+     "chars": 22,
+     "lines": 1,
+     "size": 25,
+     "vw": 6.4,
+     "font": "Arial",
+     "weight": 400,
+     "tracking": -0.02,
+     "leading": 1.2,
+     "top": 89,
+     "tag": "h1",
+     "kind": "heading",
+     "align": "left",
+     "position": "left"
+    },
+    "charts": 4,
+    "layout": {
+     "panels": 2,
+     "firstScreen": 2,
+     "ragged": [],
+     "voids": []
+    },
+    "tiles": 0,
+    "panels": {
+     "count": 8,
+     "radii": [
+      [
+       0,
+       6
+      ],
+      [
+       12,
+       2
+      ]
+     ],
+     "heavyBorders": 0,
+     "borderSamples": [],
+     "heavyShadows": 0,
+     "softShadows": 0,
+     "shadowSamples": [],
+     "glass": 0
+    },
+    "chips": {
+     "count": 0,
+     "hues": 0,
+     "samples": []
+    },
+    "numbers": {
+     "cells": 0,
+     "leftAligned": 0,
+     "figures": 2,
+     "tabularShare": 1,
+     "kpiMax": 22
+    },
+    "rows": {
+     "count": 28,
+     "median": 39
+    },
+    "chartHues": 1,
+    "placeholders": [],
+    "type": {
+     "under13": 0.68,
+     "tiny": 0,
+     "tinySamples": [],
+     "sizes": [
+      11,
+      12,
+      13,
+      14,
+      15,
+      17,
+      18,
+      22,
+      23,
+      25
+     ]
+    },
+    "title": {
+     "text": "Your week, in balance.",
+     "size": 25,
+     "top": 89
+    },
+    "colourShare": 0.02
+   },
+   "consoleErrors": []
+  }
+ ],
+ "findings": [
+  {
+   "level": "WARN",
+   "id": "tiny-text",
+   "width": 1440,
+   "message": "67% of the text is under 13px.",
+   "fix": "Data and labels read at 13–14px; keep 11–12px for sublines and axis ticks.",
+   "alsoAt": [
+    768,
+    390
+   ]
+  }
+ ],
+ "images": [
+  {
+   "viewport": "desktop",
+   "width": 1440,
+   "fold": "/tmp/daywell-insights/visual/desktop-fold.jpg",
+   "pages": [
+    "/tmp/daywell-insights/visual/desktop-page-01.jpg",
+    "/tmp/daywell-insights/visual/desktop-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "tablet",
+   "width": 768,
+   "fold": "/tmp/daywell-insights/visual/tablet-fold.jpg",
+   "pages": [
+    "/tmp/daywell-insights/visual/tablet-page-01.jpg",
+    "/tmp/daywell-insights/visual/tablet-page-02.jpg"
+   ],
+   "film": []
+  },
+  {
+   "viewport": "mobile",
+   "width": 390,
+   "fold": "/tmp/daywell-insights/visual/mobile-fold.jpg",
+   "pages": [
+    "/tmp/daywell-insights/visual/mobile-page-01.jpg",
+    "/tmp/daywell-insights/visual/mobile-page-02.jpg"
+   ],
+   "film": []
+  }
+ ]
+}
