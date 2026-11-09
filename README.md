@@ -66,3 +66,6 @@ Browser → Next.js `/api/*` → gRPC (`proto/routine.proto`) → PostgreSQL. Br
 - `docker compose logs backend` if the API errors.
 - If port 3000 or 5433 is occupied, change the **host-side** port in `docker-compose.yml`.
 - Database schema initialization happens only when the volume is first created. For future schema changes use proper migrations.
+
+## Application colors
+Sage & Chalk is applied through `web/app/theme.css`, selected on the root layout. Components use semantic color variables; category dots share `web/lib/theme.ts` references. See [COLOR_THEME.md](COLOR_THEME.md) for the palette and how to extend it.

@@ -1,10 +1,10 @@
 'use client';
+import { categoryColors as colors } from '../lib/theme';
 
 import { useEffect, useId, useMemo, useRef, useState } from 'react';
 import type { CalendarActivity } from '../lib/calendar';
 import { buildInsights } from '../lib/insights';
 
-const colors: Record<string,string> = { Health:'#21a985',Family:'#d99356',Career:'#6789e8',Learning:'#9b7bdf',Personal:'#e47c9e' };
 const shortDate = (date: Date) => date.toLocaleDateString('en-US',{month:'short',day:'numeric'});
 const fullDate = (date: Date) => date.toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',year:'numeric'});
 

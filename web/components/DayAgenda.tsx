@@ -1,4 +1,5 @@
 'use client';
+import { categoryColors as colors } from '../lib/theme';
 
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import type { KeyboardEvent, PointerEvent } from 'react';
@@ -18,7 +19,6 @@ type Props = {
 type Drag = { id: string; index: number; keyboard: boolean };
 type Session = { id: string; pointerId: number; y: number; active: boolean };
 const time = (iso: string) => new Date(iso).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
-const colors: Record<string,string> = { Health: '#21a985', Family: '#d99356', Career: '#6789e8', Learning: '#9b7bdf', Personal: '#e47c9e' };
 
 export default function DayAgenda({ day, items, hours, busy, onEdit, onNew, onStatus, onMove, onViewLog }: Props) {
   const rows = layoutDay(items, day, hours.start, hours.end);

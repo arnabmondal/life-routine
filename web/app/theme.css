@@ -1,0 +1,50 @@
+/* Sage & Chalk: the single source of color values for Daywell.
+   Apply another theme by overriding semantic properties on [data-theme].
+   Geometry and component behavior belong in globals.css. */
+:root,
+[data-theme="sage-chalk"] {
+  color-scheme: light;
+  --color-page: #f3f5f1;
+  --color-surface: #ffffff;
+  --color-tonal: #e9ede6;
+  --color-text: #263b32;
+  --color-text-muted: #58675e;
+  --color-border: #dce2d9;
+  --color-control-border: #abb9af;
+  --color-action: #23765e;
+  --color-action-hover: #195c49;
+  --color-action-text: #ffffff;
+  --color-focus: var(--color-action);
+  --color-selected: #dae9df;
+  --color-selected-text: #195c49;
+  --color-text-selection: #c3e3d2;
+  --color-success: #195c49;
+  --color-success-surface: #f0f7f2;
+  --color-danger: #9b3e38;
+  --color-danger-surface: #fbefec;
+  --color-weekend: #f9faf7;
+  --color-rule-subtle: #edf0e9;
+  --color-drag-preview: #e2f0e7cc;
+  --color-dialog-shadow: #1a322b33;
+  --color-dialog-backdrop: #18382b77;
+
+  /* Category identity is preserved as dots, independently of UI state colors. */
+  --color-health: #21a985;
+  --color-family: #d99356;
+  --color-career: #6789e8;
+  --color-learning: #9b7bdf;
+  --color-personal: #e47c9e;
+
+  /* Compatibility aliases let every existing component share the same theme. */
+  --bg: var(--color-page);
+  --surface: var(--color-surface);
+  --tonal: var(--color-tonal);
+  --ink: var(--color-text);
+  --muted: var(--color-text-muted);
+  --line: var(--color-border);
+  --control: var(--color-control-border);
+  --green: var(--color-action);
+  --green-hover: var(--color-action-hover);
+  --negative: var(--color-danger);
+  --completed-surface: var(--color-success-surface);
+}

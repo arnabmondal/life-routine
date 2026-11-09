@@ -1,4 +1,5 @@
 'use client';
+import { categoryColors as categories } from '../lib/theme';
 
 import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties, KeyboardEvent, PointerEvent } from 'react';
@@ -8,9 +9,6 @@ import {
   PIXELS_PER_MINUTE, SNAP_MINUTES, snapMinute,
 } from '../lib/calendar';
 
-const categories: Record<string, string> = {
-  Health: '#21a985', Family: '#d99356', Career: '#6789e8', Learning: '#9b7bdf', Personal: '#e47c9e',
-};
 const time = (date: string) => new Date(date).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
 const dayName = (day: Date) => day.toLocaleDateString('en-US', { weekday: 'long', month: 'short', day: 'numeric' });
 
@@ -261,7 +259,7 @@ export default function WeekCalendar({ days, items, busy, startMinute, endMinute
             const height = (visualEnd - start) * PIXELS_PER_MINUTE - 2;
             const compact = height < 100;
             return <article key={activity.id} data-activity-id={activity.id} className={'scheduled-card ' + activity.status + (compact ? ' compact' : '') + (lanes > 1 ? ' overlapping' : '') + (destination?.activity.id === activity.id ? ' drag-source' : '')}
-              style={{ top: (start - startMinute) * PIXELS_PER_MINUTE, height, left: `calc(${lane / lanes * 100}% + 2px)`, width: `calc(${100 / lanes}% - 4px)`, '--event-color': categories[activity.category] || '#68716d' } as CSSProperties}
+              style={{ top: (start - startMinute) * PIXELS_PER_MINUTE, height, left: `calc(${lane / lanes * 100}% + 2px)`, width: `calc(${100 / lanes}% - 4px)`, '--event-color': categories[activity.category] || 'var(--muted)' } as CSSProperties}
               onPointerDown={event => pointerDown(event, activity, continuation)} onPointerMove={pointerMove} onPointerUp={pointerUp}
               onPointerCancel={() => { if (pointer.current) cancelMove(); }} onLostPointerCapture={event => { if (pointer.current && !event.currentTarget.hasPointerCapture(event.pointerId)) cancelMove(); }}>
               <button className="scheduled-edit" aria-label={`Edit ${activity.title}, ${time(activity.startAt)} to ${time(activity.endAt)}, ${activity.category}, ${activity.status}${continuation ? ', continues from previous day' : ''}`} title={`${activity.title}\n${time(activity.startAt)} – ${time(activity.endAt)}\n${activity.category} · ${activity.status}`} disabled={busy}

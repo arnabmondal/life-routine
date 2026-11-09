@@ -3,8 +3,11 @@ name: Daywell
 description: A quiet personal routine planner.
 colors:
   bg: "#f3f5f1"
-  surface: "#fff"
+  surface: "#ffffff"
   tonal: "#e9ede6"
+  selected: "#dae9df"
+  selected-ink: "#195c49"
+  negative-surface: "#fbefec"
   ink: "#263b32"
   muted: "#58675e"
   line: "#dce2d9"
@@ -84,12 +87,13 @@ components:
     rounded: "{rounded.control}"
     padding: "10px"
   navigation-active:
-    backgroundColor: "{colors.tonal}"
-    textColor: "{colors.ink}"
+    backgroundColor: "{colors.selected}"
+    textColor: "{colors.selected-ink}"
     rounded: "{rounded.item}"
     padding: "12px"
   summary:
-    backgroundColor: "{colors.tonal}"
+    backgroundColor: "{colors.surface}"
+    borderColor: "{colors.line}"
     rounded: "{rounded.surface}"
     padding: "16px"
   event:
@@ -162,10 +166,10 @@ Primary actions are green with white text, a matching border, and deep-green hov
 White fields have a control-edge border, control-radius corners, 10px padding, 16px text, and a 44px minimum height. Labels are 13px semibold. Focus follows the shared green outline. Errors appear as explicit red text; there is no field-level error-border variant.
 
 ### Navigation
-Muted icon-and-label buttons become tonal with ink text when active. Tabs follow the same color relationship. On narrow screens the week calendar’s date picker uses green fill and white selected-date text; the agenda’s date picker uses tonal sage with green ink. Category labels are static legend entries, not filter chips.
+Active navigation uses Selected Sage with strong green text. View tabs use a white selected surface inside a quiet tonal group. Both date pickers use Selected Sage (#DAE9DF), green ink, and an inset green underline. Category labels are static legend entries, not filter chips.
 
 ### Cards / Containers
-Summary cells use a tonal fill without shadows. The agenda and calendar use a white surface with clipped corners and thin separators. Agenda rows use quiet horizontal separators; drag grips and outcome controls have 44px touch targets. Activity cards use white fill, item-radius corners, a fine divider border, and compact internal spacing. Completed cards gain a faint green wash; skipped titles gain a strike-through and regular weight. Outcomes remain written out.
+Statistics cards use white surfaces and subtle divider-color borders without shadows. The agenda and calendar use a white surface with clipped corners and thin separators. Agenda rows use quiet horizontal separators; drag grips and outcome controls have 44px touch targets. Activity cards use white fill, item-radius corners, a fine divider border, and compact internal spacing. Completed cards gain a faint green wash; skipped titles gain a strike-through and regular weight. Outcomes remain written out.
 
 ### Outcome controls
 Small check and skip buttons use transparent backgrounds. Selected controls receive a current-color inset outline; completion uses dark green and skipping uses outcome red. At 850px and below, each outcome target is at least 44px square. Selected state is also exposed with aria-pressed.
@@ -212,7 +216,10 @@ Grip pointer capture supports mouse and touch without preventing ordinary row sw
 After a changed position is dropped, a native dialog compares Current and Suggested times. The original order is unchanged until Apply time change. Conflicts and outside-hours suggestions are explicit warnings; other activities are never silently shifted. Edit exact times opens the existing editor prefilled with the suggestion. A blocked insertion between identical neighbor starts explains the limitation without offering Apply. Success restores the source grip focus without scrolling; failure keeps the review and retry action accessible, with an inline error. Week-grid dragging keeps its immediate-save/Undo interaction. Activity mutations retain stable agenda rows and the scroll/focus continuity contract.
 
 ### Compact weekly statistics — November 9, 2026
-The user requested visible top-of-page stats while retaining the compact agenda. A tonal strip between the toolbar and date picker replaces the hidden Week summary. It labels the actual displayed week and shows Scheduled, Completed plus percentage, Hours (planned duration of completed activities), and Skipped. The same totals appear in Agenda, Week and Activity log. Desktop uses a 48px single horizontal row; phone uses a week label above four small metric columns (about 76px total). No large cards, explanatory paragraphs, or extra disclosure are required. Loading retains the same geometry with dashes; zero states show zero. Values update from existing stored-record summaries.
+The user requested visible top-of-page stats while retaining the compact agenda. A compact statistics region between the toolbar and date picker replaces the hidden Week summary; its four individual cards now use the shared white surface and border tokens. It labels the actual displayed week and shows Scheduled, Completed plus percentage, Hours (planned duration of completed activities), and Skipped. The same totals appear in Agenda, Week and Activity log. Desktop uses a 48px single horizontal row; phone uses a week label above four small metric columns (about 76px total). No large cards, explanatory paragraphs, or extra disclosure are required. Loading retains the same geometry with dashes; zero states show zero. Values update from existing stored-record summaries.
 
 ### Individual compact stats cards
-The visible top statistics use four separate tonal cards with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.
+The visible top statistics use four separate white cards with subtle borders with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.
+
+### Applied Sage & Chalk theme
+`web/app/theme.css` owns all application color values; the root layout declares `data-theme="sage-chalk"`. Stats cards, schedule, inputs and dialogs use White; selected dates/navigation/leaderboard rows use Selected Sage and strong green text. Forest Green handles actions, charts and focus. Success and error states retain independent semantic colors. Selected state stays selected on hover. Native controls use light color-scheme. Inline category dots reference the central category variables through `web/lib/theme.ts`; no view duplicates the palette. See COLOR_THEME.md for exact tokens and extension instructions. This color-only update preserves the compact card layout and all agenda/calendar interaction contracts.

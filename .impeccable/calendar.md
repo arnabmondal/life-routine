@@ -5,7 +5,7 @@ Mode: Operate. Route: /. Primary target: web/components/Dashboard.tsx.
 THESIS: Daywell's repeated school runs, dog walks, and protected focus blocks form a weekly rhythm. The schedule remains the main working surface.
 OWN-WORLD: Taste editorial-greeting, seed 750623983. Pale sage ground, white schedule, tonal summary cells, regular-weight figures, retained green and life-area identity colors; no decorative imagery.
 STORY: Open today’s commitments, record an outcome, reorder with a reviewed time suggestion, or switch to the week for broader planning. Counts derive from stored records.
-FIRST VIEWPORT: Compact horizontal Daywell navigation, today/date/actions, Agenda/Week/Activity log tabs, a seven-date picker, and chronological agenda rows. Weekly metrics remain visible in a compact tonal strip above the date picker.
+FIRST VIEWPORT: Compact horizontal Daywell navigation, today/date/actions, Agenda/Week/Activity log tabs, a seven-date picker, and chronological agenda rows. Weekly metrics remain visible in a compact white stats cards above the date picker.
 FORM: Approved option B, Today agenda, retains the pale sage/white/green world and existing Arial stack. Today is the primary working surface. Calendar settings and New activity remain adjacent; Week is one tap away. Agenda rows support pointer/touch grips and keyboard reordering with a suggested-time review before saving. The week grid retains direct drag-to-time behavior. No entrance motion; status feedback is immediate and reduced motion is supported.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
@@ -28,4 +28,7 @@ The user selected the compact Today agenda (option B), explicitly retaining drag
 Preserve all weekly metrics above the working schedule in a compact strip: 48px desktop, about 76px phone. Do not hide the stats or restore large cards. Keep the displayed week explicit and use the existing record-derived summary.
 
 ### Individual compact stats cards
-The visible top statistics use four separate tonal cards with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.
+The visible top statistics use four separate white cards with subtle borders with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.
+
+## Shared Sage & Chalk theme
+The approved scheme is implemented through web/app/theme.css with data-theme="sage-chalk" on the root layout. White cards differ from Selected Sage dates; Forest Green is the action/focus/chart hue. Semantic success/error tokens cover feedback, while category dots preserve existing identity. Theme values are centralized; no marketing-page geometry, typography replacement, or animation was added to this working app.
