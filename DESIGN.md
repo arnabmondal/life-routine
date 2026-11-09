@@ -22,10 +22,10 @@ colors:
 typography:
   headline:
     fontFamily: "Arial, Helvetica, sans-serif"
-    fontSize: "30px"
+    fontSize: "24px"
     fontWeight: 400
     lineHeight: "1.2"
-    letterSpacing: "-0.6px"
+    letterSpacing: "-0.5px"
   title:
     fontFamily: "Arial, Helvetica, sans-serif"
     fontSize: "18px"
@@ -137,13 +137,13 @@ A low-chroma sage and white foundation supports a deeper green action color.
 
 **Body and heading font:** Arial, Helvetica, sans-serif. Tabular numerals align schedule data.
 
-Headlines and metric figures use regular weight; section titles and activity names use semibold. The frontmatter records desktop roles. At narrow widths, the page heading becomes 25px, summary figures become 22px, and activity names become 15px. Agenda metadata uses 12px; time-grid ranges and dense overlapping cards use 11px secondary labels, while mobile outcome labels use 13px. No separate display or mono font is present.
+Headlines and metric figures use regular weight; section titles and activity names use semibold. The frontmatter records desktop roles. At narrow widths, the page heading becomes 22px and agenda activity names use 13px (12px at 380px and below). Summary figures retain the existing scale inside their disclosure. Agenda metadata uses 12px on desktop and 11px on phones; time-grid ranges and dense overlapping cards use 11px secondary labels, while mobile outcome labels use 13px. No separate display or mono font is present.
 
 ## Layout
 
-The desktop shell pairs a 230px sidebar with a centered main area capped at 1240px, including 40px vertical and 36px horizontal padding. Four equal summary cells and seven equal time-grid day columns share the content edges; summary gaps use the 16px rhythm. Calendar headings use 24px padding.
+The app uses a 64px horizontal navigation band on desktop and a centered main area capped at 1400px, with 20px vertical and 32px horizontal padding. A compact toolbar holds the selected date, date navigation, Agenda/Week/Activity log tabs, New activity, and settings. Agenda is the default; its seven-day picker and a slim planning-hours/count line lead directly into chronological rows. Weekly progress stays visible in a compact strip between the toolbar and date picker. The working surface, not the greeting or metrics, owns the first viewport.
 
-At 1100px and below, navigation becomes a horizontal top band and main padding becomes 28px by 24px. At 850px and below, a seven-date picker selects one visible day column, with larger activity controls. At 600px and below, main padding becomes 24px by 16px, summaries form a compact two-by-two tonal block, calendar actions use a grid, and paired fields stack. At 1600px and above, main top padding becomes 56px.
+At 1000px and below, the toolbar wraps its date navigation and view tabs onto a second row and main padding becomes 16px by 24px. At 600px and below, navigation is 52px high, main padding is 14px by 12px, and the toolbar uses two rows: title/actions, then date navigation/view tabs. At 380px and below, navigation text becomes smaller while the Today shortcut remains available. Fields stack in dialogs at 600px. The week grid retains its existing selected-day adaptation below 850px.
 
 ## Elevation & Depth
 
@@ -162,10 +162,10 @@ Primary actions are green with white text, a matching border, and deep-green hov
 White fields have a control-edge border, control-radius corners, 10px padding, 16px text, and a 44px minimum height. Labels are 13px semibold. Focus follows the shared green outline. Errors appear as explicit red text; there is no field-level error-border variant.
 
 ### Navigation
-Muted icon-and-label buttons become tonal with ink text when active. Tabs follow the same color relationship. On narrow screens the date picker uses a green fill and white text for the selected date. Category labels are static legend entries, not filter chips.
+Muted icon-and-label buttons become tonal with ink text when active. Tabs follow the same color relationship. On narrow screens the week calendar’s date picker uses green fill and white selected-date text; the agenda’s date picker uses tonal sage with green ink. Category labels are static legend entries, not filter chips.
 
 ### Cards / Containers
-Summary cells use a tonal fill without shadows. The calendar is a white surface with clipped corners and thin separators. Activity cards use white fill, item-radius corners, a fine divider border, and compact internal spacing. Completed cards gain a faint green wash; skipped titles gain a strike-through and regular weight. Outcomes remain written out.
+Summary cells use a tonal fill without shadows. The agenda and calendar use a white surface with clipped corners and thin separators. Agenda rows use quiet horizontal separators; drag grips and outcome controls have 44px touch targets. Activity cards use white fill, item-radius corners, a fine divider border, and compact internal spacing. Completed cards gain a faint green wash; skipped titles gain a strike-through and regular weight. Outcomes remain written out.
 
 ### Outcome controls
 Small check and skip buttons use transparent backgrounds. Selected controls receive a current-color inset outline; completion uses dark green and skipping uses outcome red. At 850px and below, each outcome target is at least 44px square. Selected state is also exposed with aria-pressed.
@@ -202,4 +202,17 @@ The feedback region retains its largest shown height during the mounted session,
 ### Calendar settings
 A named settings icon immediately follows New activity. It opens the shared native dialog, titled Calendar settings, with a Planning hours section. Additional calendar-view settings can be added as peer sections. Start/end select fields use the existing 44px fields, visible labels, and 15-minute choices, with an explicit end-of-day midnight option. End must be later than start on the same day. Save persists the validated range locally in this browser; Cancel, Close, and Escape discard the draft and return focus without scrolling. A reset action selects 6:00 AM–10:00 PM in the draft. Storage errors keep the dialog and draft open.
 
-The grid omits hours outside the selected window and clips boundary-crossing activity segments before assigning overlap lanes. Stored activities and weekly summaries remain unchanged; a count links to the activity log when records are wholly outside the visible hours. Drag destinations stay inside the window and preserve duration; the editor can still set exact times outside it. New activity defaults to a time inside the chosen window. Saving a new window intentionally repositions to its first visible commitment; ordinary entry mutations retain the continuity contract above. Settings use browser-local storage under `daywell.calendar-settings.v1`; invalid stored values fall back safely. At 380px and below, date navigation and New activity/settings occupy separate rows, keeping the settings icon adjacent to New activity.
+The grid omits hours outside the selected window and clips boundary-crossing activity segments before assigning overlap lanes. Stored activities and weekly summaries remain unchanged; a count links to the activity log when records are wholly outside the visible hours. Week-grid drag destinations stay inside the window and preserve duration; the editor can still set exact times outside it. New activity defaults to a time inside the chosen window. Saving a new window intentionally repositions to its first visible commitment; ordinary entry mutations retain the continuity contract above. Settings use browser-local storage under `daywell.calendar-settings.v1`; invalid stored values fall back safely. At 380px and below, date navigation and New activity/settings occupy separate rows, keeping the settings icon adjacent to New activity.
+
+### Daily agenda and drag review
+Option B (Today agenda) is the approved composition. Rows align a grip, local start/end time, title/category/written outcome, and complete/skip actions. Desktop rows have a 76px minimum height; phone rows grow to fit stacked 44px outcome targets and wrapped titles. Their heights do not encode duration, so more commitments appear above the fold. An optional reordering-help disclosure follows the rows instead of occupying the top of the schedule. Outside-hours activities have a local count and Activity log link below the rows.
+
+Grip pointer capture supports mouse and touch without preventing ordinary row swipes from scrolling. A green insertion rule previews the target without moving layout; the source row dims. Near viewport edges, a held pointer scrolls the page. Secondary pointers do not replace the active pointer; pointer cancellation, actual capture loss, window blur, Escape and keyboard Tab cancel cleanly. Implicit SVG-to-grip capture transfer must not cancel an active touch drag. Day/window changes clear pending drag state.
+
+After a changed position is dropped, a native dialog compares Current and Suggested times. The original order is unchanged until Apply time change. Conflicts and outside-hours suggestions are explicit warnings; other activities are never silently shifted. Edit exact times opens the existing editor prefilled with the suggestion. A blocked insertion between identical neighbor starts explains the limitation without offering Apply. Success restores the source grip focus without scrolling; failure keeps the review and retry action accessible, with an inline error. Week-grid dragging keeps its immediate-save/Undo interaction. Activity mutations retain stable agenda rows and the scroll/focus continuity contract.
+
+### Compact weekly statistics — November 9, 2026
+The user requested visible top-of-page stats while retaining the compact agenda. A tonal strip between the toolbar and date picker replaces the hidden Week summary. It labels the actual displayed week and shows Scheduled, Completed plus percentage, Hours (planned duration of completed activities), and Skipped. The same totals appear in Agenda, Week and Activity log. Desktop uses a 48px single horizontal row; phone uses a week label above four small metric columns (about 76px total). No large cards, explanatory paragraphs, or extra disclosure are required. Loading retains the same geometry with dashes; zero states show zero. Values update from existing stored-record summaries.
+
+### Individual compact stats cards
+The visible top statistics use four separate tonal cards with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.

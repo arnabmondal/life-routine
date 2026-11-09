@@ -1,6 +1,6 @@
 # Daywell — local personal routine tracker
 
-A self-hosted weekly calendar for **planned vs. completed activities**, using Next.js, a separate Node.js gRPC backend, and PostgreSQL. All three services run in Docker.
+A self-hosted today-first agenda and weekly calendar for **planned vs. completed activities**, using Next.js, a separate Node.js gRPC backend, and PostgreSQL. All three services run in Docker.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ cd life-routine
 docker compose up --build -d
 ```
 
-Open **http://localhost:3000**. The first build may take a few minutes. Click **Load my weekly routine** to populate the current week. Use the arrows to navigate other weeks and **Fill missing routine slots** to seed those weeks. The template is intentionally editable.
+Open **http://localhost:3000** for today. Use **Week** (or `?view=week`) for the calendar and **Activity log** (or `?view=log`) for insights. The first build may take a few minutes. Click **Load my weekly routine** to populate the current week. Agenda arrows navigate days; Week and Activity log arrows navigate weeks and **Fill missing routine slots** to seed those weeks. The template is intentionally editable.
 
 ## Stop / restart
 
@@ -37,10 +37,13 @@ Browser → Next.js `/api/*` → gRPC (`proto/routine.proto`) → PostgreSQL. Br
 
 ## Included
 
-- Seven-day time-grid calendar and activity log
+- Today-first agenda, seven-day time-grid calendar, and activity log
+- Drag agenda grips to reorder; review suggested times, overlaps, and planning-hours warnings before saving
+- Agenda keyboard reordering: Space, Up/Down, Enter to review; Escape/Tab to cancel
+- Calendar settings choose visible planning hours; weekly progress stays visible in a compact top strip
 - Four/eight-week daily completion trends and top-five consistency leaderboard
-- Drag cards to change time/day in 15-minute increments; touch users drag the grip
-- Keyboard scheduling: focus a Move grip, press Space, use arrows, Enter to save or Escape to cancel
+- In Week view, drag cards to change time/day in 15-minute increments; touch users drag the grip
+- In Week view, keyboard scheduling: focus a Move grip, press Space, use arrows, Enter to save or Escape to cancel
 - Overlapping activities appear side by side; moves keep duration and offer Undo
 - Add, edit, delete activities
 - Mark planned, completed, or skipped; record completion timestamp

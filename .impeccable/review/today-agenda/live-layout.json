@@ -1,0 +1,38 @@
+[
+  {
+    "width": 1280,
+    "height": 800,
+    "firstActivity": 247.296875,
+    "overflow": false,
+    "visibleRows": 7,
+    "smallestGrip": 44,
+    "smallestOutcome": 44
+  },
+  {
+    "width": 820,
+    "height": 900,
+    "firstActivity": 243.296875,
+    "overflow": false,
+    "visibleRows": 8,
+    "smallestGrip": 44,
+    "smallestOutcome": 44
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "firstActivity": 276.390625,
+    "overflow": false,
+    "visibleRows": 5,
+    "smallestGrip": 44,
+    "smallestOutcome": 44
+  },
+  {
+    "width": 320,
+    "height": 844,
+    "firstActivity": 276.390625,
+    "overflow": false,
+    "visibleRows": 5,
+    "smallestGrip": 44,
+    "smallestOutcome": 44
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "width": 1440,
+    "check": "today-first layout, first activity above 350px, summary collapsed, no horizontal overflow",
+    "firstTop": 247.296875
+  },
+  {
+    "width": 1440,
+    "check": "mouse drag proposes 12:00\u219207:00, no writes until Apply, confirmed order and metadata preserved"
+  },
+  {
+    "width": 1440,
+    "check": "synthetic touch drag proposes position; Cancel preserves original times/order"
+  },
+  {
+    "width": 1440,
+    "check": "keyboard reorder; 503 rollback retains proposal/focus; retry and Undo restore chronological data"
+  },
+  {
+    "width": 1440,
+    "check": "overlap warning; Escape makes no writes; exact-time editor opens with proposed draft"
+  },
+  {
+    "width": 1440,
+    "check": "complete, skip, and edit retain page position, entry position and focus"
+  },
+  {
+    "width": 1440,
+    "check": "pointercancel recovers; keyboard Escape cancels pickup"
+  },
+  {
+    "width": 1440,
+    "check": "retained week-view synthetic touch drag saves 10:15 without unintended capture cancellation"
+  },
+  {
+    "width": 1440,
+    "check": "Week one tap away; settings retained; next-day empty state and new-entry date correct"
+  },
+  {
+    "width": 820,
+    "check": "today-first layout, first activity above 350px, summary collapsed, no horizontal overflow",
+    "firstTop": 243.296875
+  },
+  {
+    "width": 820,
+    "check": "mouse drag proposes 12:00\u219207:00, no writes until Apply, confirmed order and metadata preserved"
+  },
+  {
+    "width": 820,
+    "check": "synthetic touch drag proposes position; Cancel preserves original times/order"
+  },
+  {
+    "width": 820,
+    "check": "keyboard reorder; 503 rollback retains proposal/focus; retry and Undo restore chronological data"
+  },
+  {
+    "width": 820,
+    "check": "overlap warning; Escape makes no writes; exact-time editor opens with proposed draft"
+  },
+  {
+    "width": 820,
+    "check": "complete, skip, and edit retain page position, entry position and focus"
+  },
+  {
+    "width": 820,
+    "check": "pointercancel recovers; keyboard Escape cancels pickup"
+  },
+  {
+    "width": 820,
+    "check": "retained week-view synthetic touch drag saves 10:15 without unintended capture cancellation"
+  },
+  {
+    "width": 820,
+    "check": "Week one tap away; settings retained; next-day empty state and new-entry date correct"
+  },
+  {
+    "width": 390,
+    "check": "today-first layout, first activity above 350px, summary collapsed, no horizontal overflow",
+    "firstTop": 276.390625
+  },
+  {
+    "width": 390,
+    "check": "mouse drag proposes 12:00\u219207:00, no writes until Apply, confirmed order and metadata preserved"
+  },
+  {
+    "width": 390,
+    "check": "synthetic touch drag proposes position; Cancel preserves original times/order"
+  },
+  {
+    "width": 390,
+    "check": "keyboard reorder; 503 rollback retains proposal/focus; retry and Undo restore chronological data"
+  },
+  {
+    "width": 390,
+    "check": "overlap warning; Escape makes no writes; exact-time editor opens with proposed draft"
+  },
+  {
+    "width": 390,
+    "check": "complete, skip, and edit retain page position, entry position and focus"
+  },
+  {
+    "width": 390,
+    "check": "pointercancel recovers; keyboard Escape cancels pickup"
+  },
+  {
+    "width": 390,
+    "check": "retained week-view synthetic touch drag saves 10:15 without unintended capture cancellation"
+  },
+  {
+    "width": 390,
+    "check": "Week one tap away; settings retained; next-day empty state and new-entry date correct"
+  },
+  {
+    "width": 320,
+    "check": "today-first layout, first activity above 350px, summary collapsed, no horizontal overflow",
+    "firstTop": 276.390625
+  },
+  {
+    "width": 320,
+    "check": "mouse drag proposes 12:00\u219207:00, no writes until Apply, confirmed order and metadata preserved"
+  },
+  {
+    "width": 320,
+    "check": "synthetic touch drag proposes position; Cancel preserves original times/order"
+  },
+  {
+    "width": 320,
+    "check": "keyboard reorder; 503 rollback retains proposal/focus; retry and Undo restore chronological data"
+  },
+  {
+    "width": 320,
+    "check": "overlap warning; Escape makes no writes; exact-time editor opens with proposed draft"
+  },
+  {
+    "width": 320,
+    "check": "complete, skip, and edit retain page position, entry position and focus"
+  },
+  {
+    "width": 320,
+    "check": "pointercancel recovers; keyboard Escape cancels pickup"
+  },
+  {
+    "width": 320,
+    "check": "retained week-view synthetic touch drag saves 10:15 without unintended capture cancellation"
+  },
+  {
+    "width": 320,
+    "check": "Week one tap away; settings retained; next-day empty state and new-entry date correct"
+  }
+]

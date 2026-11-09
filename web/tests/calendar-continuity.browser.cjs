@@ -5,7 +5,7 @@ const {chromium}=require('playwright');
 const assert=require('node:assert/strict');
 const outputDir=process.env.CALENDAR_TEST_OUTPUT||require('node:path').join(require('node:os').tmpdir(),'daywell-calendar-continuity');
 require('node:fs').mkdirSync(outputDir,{recursive:true});
-const baseURL=process.env.BASE_URL||'http://localhost:3000';
+const baseURL=process.env.BASE_URL||'http://localhost:3000/?view=week';
 (async()=>{
 const browser=await chromium.launch({...(process.env.CHROME_PATH?{executablePath:process.env.CHROME_PATH}:{channel:'chrome'}),headless:true});
 const results=[];

@@ -28,7 +28,7 @@ type Props = {
   onEdit: (activity: CalendarActivity) => void;
   onNew: (day: Date) => void;
   onStatus: (activity: CalendarActivity, status: CalendarActivity['status']) => void;
-  onMove: (activity: CalendarActivity, startAt: string) => Promise<void>;
+  onMove: (activity: CalendarActivity, startAt: string) => Promise<unknown>;
 };
 
 export default function WeekCalendar({ days, items, busy, startMinute, endMinute, onViewLog, onEdit, onNew, onStatus, onMove }: Props) {
@@ -263,7 +263,7 @@ export default function WeekCalendar({ days, items, busy, startMinute, endMinute
             return <article key={activity.id} data-activity-id={activity.id} className={'scheduled-card ' + activity.status + (compact ? ' compact' : '') + (lanes > 1 ? ' overlapping' : '') + (destination?.activity.id === activity.id ? ' drag-source' : '')}
               style={{ top: (start - startMinute) * PIXELS_PER_MINUTE, height, left: `calc(${lane / lanes * 100}% + 2px)`, width: `calc(${100 / lanes}% - 4px)`, '--event-color': categories[activity.category] || '#68716d' } as CSSProperties}
               onPointerDown={event => pointerDown(event, activity, continuation)} onPointerMove={pointerMove} onPointerUp={pointerUp}
-              onPointerCancel={() => { if (pointer.current) cancelMove(); }} onLostPointerCapture={() => { if (pointer.current) cancelMove(); }}>
+              onPointerCancel={() => { if (pointer.current) cancelMove(); }} onLostPointerCapture={event => { if (pointer.current && !event.currentTarget.hasPointerCapture(event.pointerId)) cancelMove(); }}>
               <button className="scheduled-edit" aria-label={`Edit ${activity.title}, ${time(activity.startAt)} to ${time(activity.endAt)}, ${activity.category}, ${activity.status}${continuation ? ', continues from previous day' : ''}`} title={`${activity.title}\n${time(activity.startAt)} – ${time(activity.endAt)}\n${activity.category} · ${activity.status}`} disabled={busy}
                 onClick={() => { if (!suppressClick.current && !destinationRef.current) onEdit(activity); }}>
                 <span className="scheduled-time">{continuation ? 'Continues · ' : ''}{time(activity.startAt)}<span className="scheduled-end"> – {time(activity.endAt)}</span></span>

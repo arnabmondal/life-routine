@@ -1,0 +1,442 @@
+[
+  {
+    "width": 1440,
+    "label": "Complete",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "Skip",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "edit success",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "skip write failure",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "editor failure and cancel",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "completion write failure",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "editor outcome completed",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "editor outcome skipped",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "saved completion with refresh failure",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "refresh retry",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 1440,
+    "label": "editor changes day",
+    "before": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Fri6"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 150,
+      "top": 258.796875,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Fri6"
+    }
+  },
+  {
+    "width": 390,
+    "label": "Complete",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "Skip",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "edit success",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "skip write failure",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Skip Evening fixture",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "editor failure and cancel",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "completion write failure",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "editor outcome completed",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "editor outcome skipped",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, skipped",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "saved completion with refresh failure",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "refresh retry",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Complete Evening fixture",
+      "day": "Wed4"
+    }
+  },
+  {
+    "width": 390,
+    "label": "editor changes day",
+    "before": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 324.390625,
+      "same": true,
+      "focus": "Edit Evening fixture, 6:00 PM to 7:00 PM, Personal, completed",
+      "day": "Wed4"
+    },
+    "after": {
+      "scroll": 2462,
+      "y": 192,
+      "top": 0,
+      "same": true,
+      "focus": "Scrollable weekly time grid",
+      "day": "Wed4"
+    }
+  }
+]

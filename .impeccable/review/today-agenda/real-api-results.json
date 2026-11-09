@@ -1,0 +1,12 @@
+[
+  {
+    "width": 1440,
+    "check": "real API drag suggestion does not write until Apply; saved chronological order, 15-minute duration and notes; Undo persisted",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "real API drag suggestion does not write until Apply; saved chronological order, 15-minute duration and notes; Undo persisted",
+    "passed": true
+  }
+]

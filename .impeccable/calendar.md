@@ -4,9 +4,9 @@ Mode: Operate. Route: /. Primary target: web/components/Dashboard.tsx.
 ## Direction contract
 THESIS: Daywell's repeated school runs, dog walks, and protected focus blocks form a weekly rhythm. The schedule remains the main working surface.
 OWN-WORLD: Taste editorial-greeting, seed 750623983. Pale sage ground, white schedule, tonal summary cells, regular-weight figures, retained green and life-area identity colors; no decorative imagery.
-STORY: See the whole week's commitments, choose a day, record its outcome, or add a commitment. Counts derive from stored records.
-FIRST VIEWPORT: Quiet Daywell navigation, a 30px personal heading, four compact summaries, then a seven-column calendar with date navigation and New activity. On tablet/phone the day picker reveals one readable daily schedule.
-FORM: Taste open-plane editorial home translated to a calendar; the 7-day sheet spans the full 12-column content grid. Signature interaction: choose a date to read that day's routine on narrow screens. No entrance motion; status feedback is immediate and reduced motion is supported. Impeccable concept roll replaced by the user's explicit Taste-led direction. seed: none (unavailable).
+STORY: Open today’s commitments, record an outcome, reorder with a reviewed time suggestion, or switch to the week for broader planning. Counts derive from stored records.
+FIRST VIEWPORT: Compact horizontal Daywell navigation, today/date/actions, Agenda/Week/Activity log tabs, a seven-date picker, and chronological agenda rows. Weekly metrics remain visible in a compact tonal strip above the date picker.
+FORM: Approved option B, Today agenda, retains the pale sage/white/green world and existing Arial stack. Today is the primary working surface. Calendar settings and New activity remain adjacent; Week is one tap away. Agenda rows support pointer/touch grips and keyboard reordering with a suggested-time review before saving. The week grid retains direct drag-to-time behavior. No entrance motion; status feedback is immediate and reduced motion is supported.
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
 ## Conflicts resolved
@@ -20,3 +20,12 @@ Activity log adds a two-thirds completion-trend graph and one-third consistency 
 
 ## Planning-hours extension
 The original full-day grid is now configurable through Calendar settings beside New activity. Its default is 6:00 AM–10:00 PM. The native settings dialog groups Planning hours as its first extensible section. The preference is local to this browser, changes visible grid geometry only, and leaves stored activities and summaries intact. Boundary segments clip into the visible window; hidden records remain accessible through Activity log. Ordinary mutation scroll/focus continuity remains required.
+
+## Today-first extension — November 6, 2026
+The user selected the compact Today agenda (option B), explicitly retaining draggable reordering and requesting suggested time changes when necessary. No separate ordering field: confirmed start times keep agenda and calendar chronological. Dialog review preserves duration and all neighbor times; conflicts/outside-hours placement are disclosed. Current-week metrics use a compact strip before the schedule, per the November 9 correction. Existing Week view, log insights, planning hours, editor, seeding, status outcomes, rollback, Undo, and scroll/focus continuity remain.
+
+## Visible statistics correction — November 9, 2026
+Preserve all weekly metrics above the working schedule in a compact strip: 48px desktop, about 76px phone. Do not hide the stats or restore large cards. Keep the displayed week explicit and use the existing record-derived summary.
+
+### Individual compact stats cards
+The visible top statistics use four separate tonal cards with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.

@@ -1,0 +1,5 @@
+{
+  "width": 390,
+  "check": "long-agenda edge scrolling continues while pointer held; Escape cancels without save; next pickup works",
+  "passed": true
+}

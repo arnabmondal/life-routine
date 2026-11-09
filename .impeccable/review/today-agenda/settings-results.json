@@ -1,0 +1,162 @@
+[
+  {
+    "width": 1440,
+    "check": "default 06:00\u201322:00; boundary clipping and hidden record notice",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "cancel and Escape discard drafts and restore focus",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "invalid range rejected; 08:15\u201320:45 changes geometry without activity writes",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "preference survives reload; new activity starts inside narrow planning window",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "complete, skip, and edit preserve scroll and focus within cropped calendar",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "keyboard move saves 09:15 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "pointer drag saves 09:30 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "blocked storage retains dialog; malformed saved range uses defaults; no overflow",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "default 06:00\u201322:00; boundary clipping and hidden record notice",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "cancel and Escape discard drafts and restore focus",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "invalid range rejected; 08:15\u201320:45 changes geometry without activity writes",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "preference survives reload; new activity starts inside narrow planning window",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "complete, skip, and edit preserve scroll and focus within cropped calendar",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "keyboard move saves 09:15 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "pointer drag saves 09:30 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "blocked storage retains dialog; malformed saved range uses defaults; no overflow",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "default 06:00\u201322:00; boundary clipping and hidden record notice",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "cancel and Escape discard drafts and restore focus",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "invalid range rejected; 08:15\u201320:45 changes geometry without activity writes",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "preference survives reload; new activity starts inside narrow planning window",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "complete, skip, and edit preserve scroll and focus within cropped calendar",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "keyboard move saves 09:15 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "pointer drag saves 09:30 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "blocked storage retains dialog; malformed saved range uses defaults; no overflow",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "default 06:00\u201322:00; boundary clipping and hidden record notice",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "cancel and Escape discard drafts and restore focus",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "invalid range rejected; 08:15\u201320:45 changes geometry without activity writes",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "preference survives reload; new activity starts inside narrow planning window",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "complete, skip, and edit preserve scroll and focus within cropped calendar",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "keyboard move saves 09:15 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "pointer drag saves 09:30 with cropped-grid coordinates",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "blocked storage retains dialog; malformed saved range uses defaults; no overflow",
+    "passed": true
+  }
+]
