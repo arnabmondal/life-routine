@@ -50,3 +50,6 @@ The visible top statistics use four separate white cards with subtle borders wit
 
 ### Shared application theme
 Sage & Chalk applies consistently to Agenda, Week, Activity log/insights and dialogs: pale sage page, individual white stats cards, sage selected states, forest green actions/focus, and distinct success/error colors. Existing life-area colors remain small category identifiers. All views share semantic CSS tokens; layout and scheduling behavior are unchanged.
+
+### Theme is an explicit user constraint
+All UI and UX updates must remain within the established Sage & Chalk palette and semantic role hierarchy. Only an explicit request to change the theme authorizes a different theme. Contrast fixes must retain approved light surfaces, dark labels, white cards and forest-green actions/focus.

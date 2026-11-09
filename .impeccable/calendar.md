@@ -32,3 +32,6 @@ The visible top statistics use four separate white cards with subtle borders wit
 
 ## Shared Sage & Chalk theme
 The approved scheme is implemented through web/app/theme.css with data-theme="sage-chalk" on the root layout. White cards differ from Selected Sage dates; Forest Green is the action/focus/chart hue. Semantic success/error tokens cover feedback, while category dots preserve existing identity. Theme values are centralized; no marketing-page geometry, typography replacement, or animation was added to this working app.
+
+## Established-theme boundary
+The user rejected dark week headers. Keep light tonal-sage week headings with dark labels, green emphasis/focus and white cards with clear neutral edges. All UX must stay within Sage & Chalk unless the user explicitly asks for a theme change. Generic contrast/polish tasks do not authorize palette or role-hierarchy changes. See AGENTS.md and COLOR_THEME.md.

@@ -1,0 +1,78 @@
+[
+  {
+    "width": 1440,
+    "phase": "before",
+    "colors": {
+      "header": "rgb(255, 255, 255)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgba(0, 0, 0, 0)",
+      "border": "rgb(171, 185, 175)"
+    },
+    "ratios": {
+      "headerVsCard": 1,
+      "headerText": 5.971556668180819,
+      "dateText": 5.490958729894701,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 2.0407768198126752,
+      "cardBorderVsGrid": null
+    }
+  },
+  {
+    "width": 820,
+    "phase": "before",
+    "colors": {
+      "header": "rgb(255, 255, 255)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgba(0, 0, 0, 0)",
+      "border": "rgb(171, 185, 175)"
+    },
+    "ratios": {
+      "headerVsCard": 1,
+      "headerText": 5.971556668180819,
+      "dateText": 5.490958729894701,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 2.0407768198126752,
+      "cardBorderVsGrid": null
+    }
+  },
+  {
+    "width": 390,
+    "phase": "before",
+    "colors": {
+      "header": "rgb(255, 255, 255)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgba(0, 0, 0, 0)",
+      "border": "rgb(171, 185, 175)"
+    },
+    "ratios": {
+      "headerVsCard": 1,
+      "headerText": 5.971556668180819,
+      "dateText": 5.490958729894701,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 2.0407768198126752,
+      "cardBorderVsGrid": null
+    }
+  },
+  {
+    "width": 320,
+    "phase": "before",
+    "colors": {
+      "header": "rgb(255, 255, 255)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgba(0, 0, 0, 0)",
+      "border": "rgb(171, 185, 175)"
+    },
+    "ratios": {
+      "headerVsCard": 1,
+      "headerText": 5.971556668180819,
+      "dateText": 5.490958729894701,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 2.0407768198126752,
+      "cardBorderVsGrid": null
+    }
+  }
+]

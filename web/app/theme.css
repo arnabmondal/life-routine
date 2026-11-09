@@ -1,5 +1,5 @@
 /* Sage & Chalk: the single source of color values for Daywell.
-   Apply another theme by overriding semantic properties on [data-theme].
+   Theme changes require an explicit user request; preserve these established color roles.
    Geometry and component behavior belong in globals.css. */
 :root,
 [data-theme="sage-chalk"] {
@@ -23,6 +23,15 @@
   --color-danger: #9b3e38;
   --color-danger-surface: #fbefec;
   --color-weekend: #f9faf7;
+
+  /* Approved light hierarchy: tonal-sage headings and bounded white cards. */
+  --color-calendar-header: var(--color-tonal);
+  --color-calendar-header-text: var(--color-text);
+  --color-calendar-header-highlight: var(--color-action);
+  --color-calendar-header-hover: var(--color-selected);
+  --color-calendar-grid: var(--color-page);
+  --color-calendar-weekend: var(--color-tonal);
+  --color-calendar-card-border: var(--color-text-muted);
   --color-rule-subtle: #edf0e9;
   --color-drag-preview: #e2f0e7cc;
   --color-dialog-shadow: #1a322b33;

@@ -1,0 +1,110 @@
+[
+  {
+    "width": 1440,
+    "check": "shared theme; white cards and borders; distinct sage selection; category identity; success and action states; minimum text contrast",
+    "contrasts": [
+      5.97,
+      11.97,
+      5.97,
+      6.26,
+      5.49
+    ],
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "settings, activity editor, and suggested-time dialog use shared surface/input/action tokens",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "failed-write error uses danger tokens; retry works",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "Week and log/chart/leaderboard themed; overriding one action/category token updates all consumers",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "shared theme; white cards and borders; distinct sage selection; category identity; success and action states; minimum text contrast",
+    "contrasts": [
+      5.97,
+      11.97,
+      5.97,
+      6.26,
+      5.49
+    ],
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "settings, activity editor, and suggested-time dialog use shared surface/input/action tokens",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "failed-write error uses danger tokens; retry works",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "Week and log/chart/leaderboard themed; overriding one action/category token updates all consumers",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "shared theme; white cards and borders; distinct sage selection; category identity; success and action states; minimum text contrast",
+    "contrasts": [
+      5.97,
+      11.97,
+      5.97,
+      6.26,
+      5.49
+    ],
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "settings, activity editor, and suggested-time dialog use shared surface/input/action tokens",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "failed-write error uses danger tokens; retry works",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "Week and log/chart/leaderboard themed; overriding one action/category token updates all consumers",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "shared theme; white cards and borders; distinct sage selection; category identity; success and action states; minimum text contrast",
+    "contrasts": [
+      5.97,
+      11.97,
+      5.97,
+      6.26,
+      5.49
+    ],
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "settings, activity editor, and suggested-time dialog use shared surface/input/action tokens",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "failed-write error uses danger tokens; retry works",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "Week and log/chart/leaderboard themed; overriding one action/category token updates all consumers",
+    "passed": true
+  }
+]

@@ -223,3 +223,9 @@ The visible top statistics use four separate white cards with subtle borders wit
 
 ### Applied Sage & Chalk theme
 `web/app/theme.css` owns all application color values; the root layout declares `data-theme="sage-chalk"`. Stats cards, schedule, inputs and dialogs use White; selected dates/navigation/leaderboard rows use Selected Sage and strong green text. Forest Green handles actions, charts and focus. Success and error states retain independent semantic colors. Selected state stays selected on hover. Native controls use light color-scheme. Inline category dots reference the central category variables through `web/lib/theme.ts`; no view duplicates the palette. See COLOR_THEME.md for exact tokens and extension instructions. This color-only update preserves the compact card layout and all agenda/calendar interaction contracts.
+
+### Week-view contrast within the established theme
+The week header uses light tonal sage (#E9EDE6), dark ink labels, and forest-green today emphasis/focus. Add controls use green, with selected-sage hover. The grid remains pale sage and cards stay white. Card boundaries reference the established muted ink for clear separation. Preserve all dimensions and event interactions. The earlier dark-header treatment was rejected and is not part of this design system.
+
+### Theme authorization boundary
+The user explicitly requires all UX to stay within Sage & Chalk unless they explicitly request a theme change. Contrast or polish requests do not authorize a new palette, dark background bands, typography changes or a different role hierarchy. Use approved white/light-sage surfaces, dark readable labels, green actions/focus and semantic status colors. Consult AGENTS.md and COLOR_THEME.md before UI changes.

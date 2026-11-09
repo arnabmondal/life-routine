@@ -1,0 +1,78 @@
+[
+  {
+    "width": 1440,
+    "phase": "after",
+    "colors": {
+      "header": "rgb(233, 237, 230)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgb(243, 245, 241)",
+      "border": "rgb(88, 103, 94)"
+    },
+    "ratios": {
+      "headerVsCard": 1.1850322601338992,
+      "headerText": 10.102882180915968,
+      "dateText": 4.633594303394125,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 5.971556668180819,
+      "cardBorderVsGrid": 5.443237451729891
+    }
+  },
+  {
+    "width": 820,
+    "phase": "after",
+    "colors": {
+      "header": "rgb(233, 237, 230)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgb(243, 245, 241)",
+      "border": "rgb(88, 103, 94)"
+    },
+    "ratios": {
+      "headerVsCard": 1.1850322601338992,
+      "headerText": 10.102882180915968,
+      "dateText": 4.633594303394125,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 5.971556668180819,
+      "cardBorderVsGrid": 5.443237451729891
+    }
+  },
+  {
+    "width": 390,
+    "phase": "after",
+    "colors": {
+      "header": "rgb(233, 237, 230)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgb(243, 245, 241)",
+      "border": "rgb(88, 103, 94)"
+    },
+    "ratios": {
+      "headerVsCard": 1.1850322601338992,
+      "headerText": 10.102882180915968,
+      "dateText": 4.633594303394125,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 5.971556668180819,
+      "cardBorderVsGrid": 5.443237451729891
+    }
+  },
+  {
+    "width": 320,
+    "phase": "after",
+    "colors": {
+      "header": "rgb(233, 237, 230)",
+      "card": "rgb(255, 255, 255)",
+      "grid": "rgb(243, 245, 241)",
+      "border": "rgb(88, 103, 94)"
+    },
+    "ratios": {
+      "headerVsCard": 1.1850322601338992,
+      "headerText": 10.102882180915968,
+      "dateText": 4.633594303394125,
+      "cardTitle": 11.972241304717347,
+      "cardTime": 5.971556668180819,
+      "cardBorderVsCard": 5.971556668180819,
+      "cardBorderVsGrid": 5.443237451729891
+    }
+  }
+]

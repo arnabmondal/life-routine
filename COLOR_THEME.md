@@ -32,12 +32,13 @@ Stats are individual white cards with a subtle border. The selected day uses sag
 
 `web/lib/theme.ts` exports category-to-CSS-variable references for Agenda, Week, Activity log and insights. The actual Health, Family, Career, Learning and Personal values live in `theme.css`. Existing category colors, including Learning’s violet, are retained as small identity dots under the established product/brand contract; they are not new theme grounds or action colors.
 
-## Extending the theme
+## Theme changes require explicit authorization
 
-1. Add semantic overrides in `theme.css` under `html[data-theme="another-name"]`.
-2. Apply the name to the root `<html>` element. Keep overrides on the root so inherited compatibility aliases resolve against the same values.
-3. Add tokens by role, not by page or a literal color name; use CSS references for inline category styling.
-4. Check cards, selection, charts, inputs, dialogs, success/error feedback, focus, and reduced-motion/hover states at desktop and phone widths.
-5. Verify text pairs are at least 4.5:1 and visible focus is at least 3:1. Category dots supplement written category names.
+The user has locked the established Sage & Chalk theme. Do not change the palette, typography, or role hierarchy during routine UX, contrast, or accessibility work. A token’s presence in the palette does not authorize reusing it in a different role: dark ink must not become a dark header band. New components must use the existing light surface/selection/action roles. Only an explicit user request to change the theme authorizes a different theme or palette.
+
+Keep color values in theme.css, inline category references in theme.ts, and verify text and necessary UI boundaries separately from decorative surface separation. If a required change cannot fit the established theme, explain the concrete conflict before changing it. Root-level theme overrides remain an implementation mechanism, not permission to introduce a different appearance.
 
 Sage & Chalk explicitly declares `color-scheme: light`, so native fields remain consistent even when the operating system prefers dark mode. The approved scheme is applied directly; changing themes at runtime can be added separately if requested.
+
+## Week calendar contrast hierarchy
+The header uses the approved tonal sage (#E9EDE6) with dark text (#263B32), forest-green today emphasis and focus, and selected-sage hover. The time grid stays pale sage; cards remain white with a clear boundary referencing the existing muted text token (#58675E). No new colors or dark surfaces are introduced. Light header/card fills are deliberately subtle; readable labels and strong edges provide separation. See ESTABLISHED_THEME_RESTORATION.md for the measured checks.

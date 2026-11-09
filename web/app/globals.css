@@ -69,3 +69,16 @@
 button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.agenda-list:focus-visible{outline-color:var(--color-focus)}
 
 .nav.active:hover:not(:disabled),.consistency-list button[aria-pressed=true]:hover:not(:disabled),.status-row .chosen:hover:not(:disabled){background:var(--color-selected);color:var(--color-selected-text)}
+
+/* The week header and card boundaries remain distinct without adding height. */
+.time-head{background:var(--color-calendar-header);border-bottom-color:var(--color-calendar-card-border)}
+.time-day-head,.time-day-head>b,.time-corner{color:var(--color-calendar-header-text)}
+.time-day-head.today{box-shadow:inset 0 2px var(--color-calendar-header-highlight)}
+.time-day-head.today>b{color:var(--color-calendar-header-highlight)}
+.time-add{color:var(--color-action)}
+.time-add:hover:not(:disabled){background:var(--color-calendar-header-hover);color:var(--color-calendar-header-text)}
+.time-add:focus-visible{outline-color:var(--color-calendar-header-highlight);outline-offset:-3px}
+.time-track,.time-ruler{background:var(--color-calendar-grid)}
+.time-track.weekend{background:var(--color-calendar-weekend)}
+.scheduled-card{border-color:var(--color-calendar-card-border)}
+.scheduled-card:hover,.scheduled-card:focus-within{border-color:var(--color-action)}
