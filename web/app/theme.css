@@ -57,3 +57,38 @@
   --negative: var(--color-danger);
   --completed-surface: var(--color-success-surface);
 }
+
+/* User-approved Sage & Chalk dark palette. Light remains unchanged. */
+[data-theme="sage-chalk-dark"] {
+  color-scheme: dark;
+  --color-page: #121916;
+  --color-surface: #1b2520;
+  --color-tonal: #27352c;
+  --color-text: #e6eee8;
+  --color-text-muted: #a7b8ac;
+  --color-border: #3e5145;
+  --color-control-border: #6e8978;
+  --color-action: #7ad4ae;
+  --color-action-hover: #9de5c3;
+  --color-action-text: #10241a;
+  --color-focus: #7ad4ae;
+  --color-selected: #304c3c;
+  --color-selected-text: #b3e7cb;
+  --color-text-selection: #315b46;
+  --color-success: #a5dfbc;
+  --color-success-surface: #20382c;
+  --color-danger: #f3a59c;
+  --color-danger-surface: #382523;
+  --color-weekend: #17211b;
+  --color-rule-subtle: #2c3b31;
+  --color-drag-preview: #315b46cc;
+  --color-dialog-shadow: #00000066;
+  --color-dialog-backdrop: #00000088;
+  --color-calendar-header: #27352c;
+  --color-calendar-header-text: #e6eee8;
+  --color-calendar-header-highlight: #7ad4ae;
+  --color-calendar-header-hover: #304c3c;
+  --color-calendar-grid: #121916;
+  --color-calendar-weekend: #17211b;
+  --color-calendar-card-border: #6e8978;
+}

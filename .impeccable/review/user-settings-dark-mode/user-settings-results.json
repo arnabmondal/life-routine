@@ -1,0 +1,150 @@
+[
+  {
+    "width": 1440,
+    "check": "top-right 44px person icon, independent calendar settings, accessible Light/Dark menu, no overflow",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "Dark applies without refetch/remount, preserves future settings, survives reload, Escape restores focus, no hydration errors",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "cross-tab synchronization; outside click; keyboard opening, radio arrows and Escape",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "switching themes preserves week grid/scroll; outside click closes menu before separate themed calendar dialog opens",
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "dark chart/dialog/menu share approved palette; text contrast >=4.5:1",
+    "ratios": [
+      7.58,
+      9.2,
+      7.58,
+      6.84
+    ],
+    "passed": true
+  },
+  {
+    "width": 1440,
+    "check": "blocked storage applies session theme and reports unsaved preference; reload returns to last saved choice",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "top-right 44px person icon, independent calendar settings, accessible Light/Dark menu, no overflow",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "Dark applies without refetch/remount, preserves future settings, survives reload, Escape restores focus, no hydration errors",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "cross-tab synchronization; outside click; keyboard opening, radio arrows and Escape",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "switching themes preserves week grid/scroll; outside click closes menu before separate themed calendar dialog opens",
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "dark chart/dialog/menu share approved palette; text contrast >=4.5:1",
+    "ratios": [
+      7.58,
+      9.2,
+      7.58,
+      6.84
+    ],
+    "passed": true
+  },
+  {
+    "width": 820,
+    "check": "blocked storage applies session theme and reports unsaved preference; reload returns to last saved choice",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "top-right 44px person icon, independent calendar settings, accessible Light/Dark menu, no overflow",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "Dark applies without refetch/remount, preserves future settings, survives reload, Escape restores focus, no hydration errors",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "cross-tab synchronization; outside click; keyboard opening, radio arrows and Escape",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "switching themes preserves week grid/scroll; outside click closes menu before separate themed calendar dialog opens",
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "dark chart/dialog/menu share approved palette; text contrast >=4.5:1",
+    "ratios": [
+      7.58,
+      9.2,
+      7.58,
+      6.84
+    ],
+    "passed": true
+  },
+  {
+    "width": 390,
+    "check": "blocked storage applies session theme and reports unsaved preference; reload returns to last saved choice",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "top-right 44px person icon, independent calendar settings, accessible Light/Dark menu, no overflow",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "Dark applies without refetch/remount, preserves future settings, survives reload, Escape restores focus, no hydration errors",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "cross-tab synchronization; outside click; keyboard opening, radio arrows and Escape",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "switching themes preserves week grid/scroll; outside click closes menu before separate themed calendar dialog opens",
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "dark chart/dialog/menu share approved palette; text contrast >=4.5:1",
+    "ratios": [
+      7.58,
+      9.2,
+      7.58,
+      6.84
+    ],
+    "passed": true
+  },
+  {
+    "width": 320,
+    "check": "blocked storage applies session theme and reports unsaved preference; reload returns to last saved choice",
+    "passed": true
+  },
+  {
+    "check": "saved dark theme applies from head before React hydration, with client JavaScript bundles blocked",
+    "passed": true
+  }
+]

@@ -35,3 +35,6 @@ The approved scheme is implemented through web/app/theme.css with data-theme="sa
 
 ## Established-theme boundary
 The user rejected dark week headers. Keep light tonal-sage week headings with dark labels, green emphasis/focus and white cards with clear neutral edges. All UX must stay within Sage & Chalk unless the user explicitly asks for a theme change. Generic contrast/polish tasks do not authorize palette or role-hierarchy changes. See AGENTS.md and COLOR_THEME.md.
+
+## Explicitly approved Dark theme and User settings
+The user approved the dark-mode preview and requested implementation with a person-icon User settings menu at the top right. Both approved palettes now belong to the established design system: Light keeps white/sage/forest roles; Dark uses green-charcoal/soft-white/mint roles from COLOR_THEME.md. Offer Light and Dark only. Keep calendar settings separate, header height compact, and theme changes free of activity mutations/refetch/remounts. Persist in the browser, apply before paint and keep keyboard/outside dismissal accessible. This approval does not authorize additional themes or arbitrary role changes.

@@ -68,4 +68,6 @@ Browser → Next.js `/api/*` → gRPC (`proto/routine.proto`) → PostgreSQL. Br
 - Database schema initialization happens only when the volume is first created. For future schema changes use proper migrations.
 
 ## Application colors
-Sage & Chalk is applied through `web/app/theme.css`, selected on the root layout. Components use semantic color variables; category dots share `web/lib/theme.ts` references. See [COLOR_THEME.md](COLOR_THEME.md) for the palette and how to extend it.
+Sage & Chalk Light and Dark are applied through `web/app/theme.css`, selected on the root layout. Components use semantic color variables; category dots share `web/lib/theme.ts` references. See [COLOR_THEME.md](COLOR_THEME.md) for the palette and how to extend it.
+
+Use the **person icon at the top right → User settings → Appearance** to switch between Light and Dark. The choice is remembered in this browser and applied before the next page render. Calendar planning hours remain under the gear beside New activity.

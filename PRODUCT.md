@@ -49,7 +49,10 @@ Mouse and touch users reorder agenda rows by their grips; keyboard users pick up
 The visible top statistics use four separate white cards with subtle borders with gaps between Scheduled, Completed/percentage, Hours, and Skipped. The week label remains explicit. Cards retain the compact footprint and four-column phone layout; they do not restore the previous large dashboard cards.
 
 ### Shared application theme
-Sage & Chalk applies consistently to Agenda, Week, Activity log/insights and dialogs: pale sage page, individual white stats cards, sage selected states, forest green actions/focus, and distinct success/error colors. Existing life-area colors remain small category identifiers. All views share semantic CSS tokens; layout and scheduling behavior are unchanged.
+Approved Sage & Chalk Light and Dark apply consistently to Agenda, Week, Activity log/insights and dialogs: pale sage page, individual white stats cards, sage selected states, forest green actions/focus, and distinct success/error colors. Existing life-area colors remain small category identifiers. All views share semantic CSS tokens; layout and scheduling behavior are unchanged.
 
 ### Theme is an explicit user constraint
 All UI and UX updates must remain within the established Sage & Chalk palette and semantic role hierarchy. Only an explicit request to change the theme authorizes a different theme. Contrast fixes must retain approved light surfaces, dark labels, white cards and forest-green actions/focus.
+
+### User settings and theme preference
+A top-right person icon opens User settings. Appearance offers the explicitly approved Light and Dark themes; selection applies immediately and persists in this browser. The saved preference applies before the page renders and synchronizes between tabs. Missing/invalid data uses Light. If browser storage is blocked, the choice works for the current visit with a visible persistence message. The menu is extensible for future user-specific settings; no account/authentication is implied. Calendar planning hours remain separate under the calendar settings gear. Other palette or visual-role changes still require an explicit request.
