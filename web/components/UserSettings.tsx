@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useId, useRef, useState } from 'react';
-import { Moon, Sun, UserRound, X } from 'lucide-react';
-import { applyTheme, saveTheme, storedTheme, THEME_NAMES, ThemeMode, USER_SETTINGS_KEY } from '../lib/user-settings';
+import { Monitor, Moon, Sun, UserRound, X } from 'lucide-react';
+import { applyTheme, saveTheme, storedTheme, isThemeMode, ThemeMode, USER_SETTINGS_KEY } from '../lib/user-settings';
 
 export default function UserSettings() {
   const [open, setOpen] = useState(false);
@@ -13,7 +13,14 @@ export default function UserSettings() {
   const panel = useRef<HTMLDivElement>(null);
   const id = useId();
   useEffect(() => {
-    setTheme(document.documentElement.dataset.theme === THEME_NAMES.dark ? 'dark' : 'light');
+    const current = document.documentElement.dataset.themeMode;
+    setTheme(isThemeMode(current) ? current : 'light');
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const followSystem = () => {
+      if (document.documentElement.dataset.themeMode === 'system') applyTheme('system');
+    };
+    media.addEventListener('change', followSystem);
+    followSystem();
     const sync = (event: StorageEvent) => {
       if (event.key !== USER_SETTINGS_KEY && event.key !== null) return;
       const next = storedTheme(event.newValue);
@@ -21,7 +28,7 @@ export default function UserSettings() {
       setMessage('Theme updated from another tab.');
     };
     window.addEventListener('storage', sync);
-    return () => window.removeEventListener('storage', sync);
+    return () => { window.removeEventListener('storage', sync); media.removeEventListener('change', followSystem); };
   }, []);
   function close(restoreFocus = false) {
     setOpen(false);
@@ -41,7 +48,7 @@ export default function UserSettings() {
   function choose(next: ThemeMode) {
     const saved = saveTheme(next);
     setTheme(next);
-    setMessage(saved ? `${next === 'dark' ? 'Dark' : 'Light'} theme saved.` : 'Theme changed for this visit. Your browser could not save the preference.');
+    setMessage(saved ? (next === 'system' ? 'Following your device’s appearance. Preference saved.' : `${next === 'dark' ? 'Dark' : 'Light'} theme saved.`) : 'Theme changed for this visit. Your browser could not save the preference.');
   }
   return <div className="user-settings" ref={root} onBlur={event => {
     if (event.relatedTarget && !event.currentTarget.contains(event.relatedTarget as Node)) close();
@@ -54,6 +61,7 @@ export default function UserSettings() {
         <fieldset className="theme-options"><legend className="sr-only">Color theme</legend>
           <label className={theme === 'light' ? 'theme-option selected' : 'theme-option'}><input type="radio" name={`${id}-theme`} value="light" checked={theme === 'light'} onChange={() => choose('light')}/><Sun size={17} aria-hidden="true"/><span>Light</span></label>
           <label className={theme === 'dark' ? 'theme-option selected' : 'theme-option'}><input type="radio" name={`${id}-theme`} value="dark" checked={theme === 'dark'} onChange={() => choose('dark')}/><Moon size={17} aria-hidden="true"/><span>Dark</span></label>
+          <label className={`theme-option theme-option-system${theme === 'system' ? ' selected' : ''}`}><input type="radio" name={`${id}-theme`} value="system" checked={theme === 'system'} onChange={() => choose('system')}/><Monitor size={17} aria-hidden="true"/><span>System</span></label>
         </fieldset>
         <p className="user-settings-status" role="status">{message}</p>
       </section>

@@ -70,4 +70,6 @@ Browser → Next.js `/api/*` → gRPC (`proto/routine.proto`) → PostgreSQL. Br
 ## Application colors
 Sage & Chalk Light and Dark are applied through `web/app/theme.css`, selected on the root layout. Components use semantic color variables; category dots share `web/lib/theme.ts` references. See [COLOR_THEME.md](COLOR_THEME.md) for the palette and how to extend it.
 
-Use the **person icon at the top right → User settings → Appearance** to switch between Light and Dark. The choice is remembered in this browser and applied before the next page render. Calendar planning hours remain under the gear beside New activity.
+Use the **person icon at the top right → User settings → Appearance** to switch between Light, Dark and System. The choice is remembered in this browser and applied before the next page render. Calendar planning hours remain under the gear beside New activity.
+
+System appearance preference: follow the device/browser `prefers-color-scheme` setting and its live changes using the two approved palettes. Persist the choice as `system`, separately from the resolved palette. Apply before paint, synchronize across tabs, and preserve calendar state. Explicit Light/Dark ignore OS changes; missing/invalid preferences still default to Light.

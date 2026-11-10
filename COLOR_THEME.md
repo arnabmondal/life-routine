@@ -38,13 +38,13 @@ The user has locked the established Sage & Chalk theme. Do not change the palett
 
 Keep color values in theme.css, inline category references in theme.ts, and verify text and necessary UI boundaries separately from decorative surface separation. If a required change cannot fit the established theme, explain the concrete conflict before changing it. Root-level theme overrides remain an implementation mechanism, not permission to introduce a different appearance.
 
-Light declares `color-scheme: light`; Dark declares `color-scheme: dark`. The explicit saved choice controls native inputs and scrollbars independently of the operating system. Only Light and Dark are offered; the user did not request a System option.
+Light declares `color-scheme: light`; Dark declares `color-scheme: dark`. The explicit saved choice controls native inputs and scrollbars independently of the operating system. System is explicitly approved and resolves to the existing Light or Dark palette using prefers-color-scheme; it follows changes live. Explicit Light/Dark override the device.
 
 ## Week calendar contrast hierarchy
 The header uses the approved tonal sage (#E9EDE6) with dark text (#263B32), forest-green today emphasis and focus, and selected-sage hover. The time grid stays pale sage; cards remain white with a clear boundary referencing the existing muted text token (#58675E). No new colors or dark surfaces are introduced. Light header/card fills are deliberately subtle; readable labels and strong edges provide separation. See ESTABLISHED_THEME_RESTORATION.md for the measured checks.
 
 ## Approved dark theme and User settings
-The user approved the rendered Sage & Chalk dark preview and requested a top-right person icon with a User settings menu. The menu contains an Appearance section with Light/Dark radio options, and can accommodate future user-specific sections. Calendar planning hours stay in the separate calendar gear beside New activity.
+The user approved the rendered Sage & Chalk dark preview and requested a top-right person icon with a User settings menu. The menu contains an Appearance section with Light/Dark/System radio options, and can accommodate future user-specific sections. Calendar planning hours stay in the separate calendar gear beside New activity.
 
 | Dark role | Value |
 | --- | --- |
@@ -65,6 +65,8 @@ The user approved the rendered Sage & Chalk dark preview and requested a top-rig
 
 All values exactly match the approved preview; category identities are inherited unchanged. The complete palette is in the dark selector in theme.css, using the existing semantic roles and compatibility aliases.
 
-Preferences live under `daywell.user-settings.v1` as `{ "theme": "light" | "dark" }`. `web/lib/user-settings.ts` owns validation, storage, root-theme application and the inline head bootstrap. Saving preserves unrelated future fields. The head script validates saved data and applies the root theme before body rendering, avoiding a light-mode flash on reload. `suppressHydrationWarning` is limited to the root attribute changed by that pre-render initialization. Invalid/missing data defaults to Light. No login, database user model or new dependency is introduced.
+Preferences live under `daywell.user-settings.v1` as `{ "theme": "light" | "dark" | "system" }`. `web/lib/user-settings.ts` owns validation, storage, root-theme application and the inline head bootstrap. Saving preserves unrelated future fields. The head script validates saved data and applies the root theme before body rendering, avoiding a light-mode flash on reload. `suppressHydrationWarning` is limited to the root attribute changed by that pre-render initialization. Invalid/missing data defaults to Light. No login, database user model or new dependency is introduced.
 
 The menu is a named nonmodal settings dialog with native radio controls, Escape/close-button focus restoration, outside-click/Tab dismissal and 44px targets. Changes apply immediately without navigation, activity requests or calendar remounts. Storage failure still applies the choice for the visit and reports that it could not be saved. Other tabs synchronize through the storage event; clearing the preference resets to Light.
+
+System appearance preference: follow the device/browser `prefers-color-scheme` setting and its live changes using the two approved palettes. Persist the choice as `system`, separately from the resolved palette. Apply before paint, synchronize across tabs, and preserve calendar state. Explicit Light/Dark ignore OS changes; missing/invalid preferences still default to Light.
